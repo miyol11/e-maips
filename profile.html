@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kemaskini Profil — e-Digital</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+<style>
+  :root{
+    --deep:#082c24; --deep2:#0d3d31; --gold:#d7bf84; --soft-gold:#eadcb4;
+    --mint:#dce9df; --line:rgba(215,191,132,.20); --error:#e08a7d; --ok:#8fc9a8;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;width:100%;min-height:100%}
+  body{font-family:'DM Sans',sans-serif;background:linear-gradient(145deg,#061f1a,#0a342a,#071f1a);min-height:100vh}
+
+  /* Navbar (same system used across all pages) */
+  .app-navbar{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,#0d2b22,#173f34);border-bottom:2px solid var(--gold);box-shadow:0 2px 10px rgba(0,0,0,.15);font-family:'DM Sans',sans-serif}
+  .app-navbar .navbar-inner{max-width:1400px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px;position:relative}
+  .app-navbar .navbar-brand{color:#f4efe6;font-weight:700;font-size:15px;letter-spacing:.05em;text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:8px}
+  .app-navbar .navbar-brand::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold)}
+  .app-navbar .navbar-links{display:flex;list-style:none;margin:0 auto 0 24px;padding:0;gap:4px;flex-wrap:wrap;flex:1}
+  .app-navbar .navbar-links a{display:block;padding:8px 14px;border-radius:8px;color:#dfe9df;text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap;transition:background .2s,color .2s}
+  .app-navbar .navbar-links a:hover{background:rgba(200,165,95,.15);color:#f4efe6}
+  .app-navbar .navbar-links a.active{background:var(--gold);color:var(--deep)}
+  .app-navbar .navbar-toggle{display:none;background:none;border:none;color:#f4efe6;font-size:22px;cursor:pointer}
+  .account-menu-wrap{position:relative;flex-shrink:0}
+  .account-toggle{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(200,165,95,.35);border-radius:999px;padding:6px 10px 6px 6px;cursor:pointer;transition:background .2s,border-color .2s}
+  .account-toggle:hover{background:rgba(200,165,95,.15);border-color:var(--gold)}
+  .account-avatar{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#ead9a6,var(--gold));color:var(--deep);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center}
+  .account-hamburger{color:#dfe9df;font-size:16px;line-height:1}
+  .account-menu{display:none;position:absolute;top:calc(100% + 8px);right:0;min-width:220px;background:#fffefb;border:1px solid #e2e8f0;border-radius:12px;box-shadow:0 16px 40px rgba(0,0,0,.18);list-style:none;margin:0;padding:6px;z-index:110}
+  .account-menu.open{display:block}
+  .account-menu li a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:8px;color:#17342c;text-decoration:none;font-size:13.5px;font-weight:500;transition:background .15s ease}
+  .account-menu li a:hover{background:#f1f5f9}
+  .account-menu li a.active-item{background:#f1f5f9;color:var(--deep2);font-weight:700}
+  .account-menu li a.logout-link{color:#a14d3e}
+  .account-menu li a.logout-link:hover{background:#fbf2ef}
+  .account-menu-divider{height:1px;background:#e2e8f0;margin:6px 4px}
+  @media (max-width:900px){
+    .app-navbar .navbar-toggle{display:block}
+    .app-navbar .navbar-links{display:none;position:absolute;top:56px;left:0;right:0;background:#173f34;flex-direction:column;padding:8px;border-bottom:2px solid var(--gold);margin:0}
+    .app-navbar .navbar-links.open{display:flex}
+    .app-navbar .navbar-links a{padding:10px 14px}
+  }
+
+  .page-shell{
+    position:relative; width:100%; min-height:calc(100vh - 56px);
+    display:flex; align-items:flex-start; justify-content:center;
+    padding:48px 20px;
+    background:radial-gradient(circle at 50% 20%, rgba(29,92,73,.4) 0%, transparent 60%);
+  }
+
+  .card{
+    width:100%; max-width:640px;
+    background:rgba(13,61,49,.38);
+    border:1px solid rgba(215,191,132,.22);
+    border-radius:16px;
+    padding:40px 38px;
+    backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+    box-shadow:0 24px 60px rgba(0,0,0,.35);
+    animation:fadeUp .6s ease both;
+  }
+  @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+  .header-row{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .header-icon{width:44px;height:44px;border-radius:12px;background:rgba(215,191,132,.12);border:1px solid rgba(215,191,132,.3);display:flex;align-items:center;justify-content:center;color:var(--gold)}
+  h1{margin:0;font-family:'Raleway',sans-serif;font-weight:700;font-size:24px;color:#f6f4ec}
+  .subtitle{margin:6px 0 28px;font-size:13.5px;color:rgba(232,238,232,.65)}
+
+  .avatar-row{display:flex;align-items:center;gap:16px;margin-bottom:26px;padding-bottom:26px;border-bottom:1px solid rgba(215,191,132,.15)}
+  .avatar-big{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#ead9a6,var(--gold));display:flex;align-items:center;justify-content:center;color:var(--deep);font-weight:700;font-size:22px}
+  .avatar-name{color:#f6f4ec;font-weight:600;font-size:15px}
+  .avatar-role{color:rgba(232,238,232,.55);font-size:12.5px;margin-top:2px}
+
+  form{display:flex;flex-direction:column;gap:16px}
+  .field-row{display:flex;gap:14px}
+  .field{display:flex;flex-direction:column;gap:7px;flex:1}
+  label{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(215,191,132,.85)}
+  input,select{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(215,191,132,.25);border-radius:9px;padding:12px 14px;font-size:14.5px;color:#f6f4ec;font-family:'DM Sans',sans-serif;transition:border-color .2s ease,background .2s ease}
+  input::placeholder{color:rgba(232,238,232,.35)}
+  input:focus,select:focus{outline:none;border-color:var(--gold);background:rgba(255,255,255,.09)}
+  input:disabled{opacity:.55;cursor:not-allowed}
+  select option{background:#0d3d31;color:#f6f4ec}
+  .hint{font-size:11.5px;color:rgba(232,238,232,.45)}
+
+  .error-msg,.success-msg{display:none;font-size:13px;padding:10px 14px;border-radius:8px}
+  .error-msg.show,.success-msg.show{display:block}
+  .error-msg{background:rgba(224,138,125,.12);border:1px solid rgba(224,138,125,.4);color:var(--error)}
+  .success-msg{background:rgba(143,201,168,.12);border:1px solid rgba(143,201,168,.4);color:var(--ok)}
+
+  .btn-row{display:flex;gap:12px;margin-top:6px}
+  .submit-btn{flex:1;padding:13px;border-radius:999px;border:1px solid var(--gold);background:linear-gradient(135deg,#ead9a6,var(--gold));color:var(--deep);font-family:'DM Sans',sans-serif;font-size:13.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:filter .2s ease,transform .15s ease}
+  .submit-btn:hover{filter:brightness(1.08)}
+  .submit-btn:active{transform:scale(.98)}
+  .submit-btn:disabled{opacity:.6;cursor:not-allowed}
+  .ghost-btn{padding:13px 20px;border-radius:999px;border:1px solid rgba(215,191,132,.4);background:transparent;color:var(--mint);font-size:13px;font-weight:600;letter-spacing:.04em;cursor:pointer;transition:background .2s ease}
+  .ghost-btn:hover{background:rgba(215,191,132,.1)}
+
+  @media (max-width:560px){
+    .card{padding:30px 22px}
+    .field-row{flex-direction:column;gap:16px}
+  }
+</style>
+</head>
+<body>
+
+  <nav class="app-navbar">
+    <div class="navbar-inner">
+      <a href="e-digital-landing.html" class="navbar-brand">e-Digital &middot; Perlis</a>
+      <button type="button" class="navbar-toggle" id="navToggle" aria-label="Buka menu bahagian">&#9776;</button>
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="penempatan-guru.html">Penempatan Guru</a></li>
+        <li><a href="arah-kiblat.html">Arah Kiblat</a></li>
+        <li><a href="tauliah-mengajar.html">Tauliah Mengajar</a></li>
+        <li><a href="rekod-guru-maips.html">Rekod Guru MAIPs</a></li>
+        <li><a href="kehadiran-program.html">Kehadiran Program</a></li>
+      </ul>
+      <div class="account-menu-wrap">
+        <button type="button" class="account-toggle" id="accountToggle" aria-haspopup="true" aria-expanded="false" aria-label="Menu akaun">
+          <span class="account-avatar">A</span>
+          <span class="account-hamburger">&#9776;</span>
+        </button>
+        <ul class="account-menu" id="accountMenu">
+          <li><a href="profile.html" class="active-item"><i data-lucide="user-round" class="w-4 h-4"></i> Kemaskini Profil</a></li>
+          <li><a href="change-password.html"><i data-lucide="key-round" class="w-4 h-4"></i> Tukar Kata Laluan</a></li>
+          <li><a href="change-email.html"><i data-lucide="mail" class="w-4 h-4"></i> Tukar E-mel</a></li>
+          <li><a href="help.html"><i data-lucide="circle-help" class="w-4 h-4"></i> Bantuan</a></li>
+          <li class="account-menu-divider"></li>
+          <li><a href="login.html" class="logout-link"><i data-lucide="log-out" class="w-4 h-4"></i> Log Keluar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <div class="card">
+      <div class="header-row">
+        <span class="header-icon"><i data-lucide="user-round" class="w-5 h-5"></i></span>
+        <div>
+          <h1>Kemaskini Profil</h1>
+        </div>
+      </div>
+      <p class="subtitle">Urus maklumat peribadi dan hubungan anda.</p>
+
+      <div class="avatar-row">
+        <div class="avatar-big" id="avatarInitial">?</div>
+        <div>
+          <div class="avatar-name" id="avatarName">Nama Pengguna</div>
+          <div class="avatar-role" id="avatarRole">Kategori — Tiada</div>
+        </div>
+      </div>
+
+      <form id="profileForm" novalidate>
+        <div class="error-msg" id="profileError"></div>
+        <div class="success-msg" id="profileSuccess">Profil berjaya dikemaskini.</div>
+
+        <div class="field">
+          <label for="fullname">Nama Penuh</label>
+          <input type="text" id="fullname" placeholder="Nama seperti IC" autocomplete="name" required>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="ic">No. Kad Pengenalan</label>
+            <input type="text" id="ic" placeholder="XXXXXX-XX-XXXX" maxlength="14" required>
+          </div>
+          <div class="field">
+            <label for="category">Kategori</label>
+            <select id="category">
+              <option value="">Pilih</option>
+              <option value="pelajar">Pelajar</option>
+              <option value="tenaga-pengajar">Tenaga Pengajar</option>
+              <option value="orang-awam">Orang Awam</option>
+              <option value="kakitangan">Kakitangan Jabatan</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="phone">No. Telefon</label>
+            <input type="tel" id="phone" placeholder="01X-XXXXXXX" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <label for="emailDisplay">E-mel</label>
+            <input type="email" id="emailDisplay" disabled>
+            <p class="hint">Untuk menukar e-mel, gunakan halaman "Tukar E-mel".</p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="address">Alamat</label>
+          <input type="text" id="address" placeholder="Alamat surat-menyurat">
+        </div>
+
+        <div class="btn-row">
+          <button type="submit" class="submit-btn" id="saveBtn">Simpan Perubahan</button>
+          <button type="button" class="ghost-btn" id="cancelBtn">Batal</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    lucide.createIcons();
+
+    document.getElementById('navToggle').addEventListener('click', function(){
+      document.getElementById('navLinks').classList.toggle('open');
+      document.getElementById('accountMenu').classList.remove('open');
+    });
+    const accountToggle = document.getElementById('accountToggle');
+    const accountMenu = document.getElementById('accountMenu');
+    accountToggle.addEventListener('click', function(e){
+      e.stopPropagation();
+      const isOpen = accountMenu.classList.toggle('open');
+      accountToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      document.getElementById('navLinks').classList.remove('open');
+    });
+    document.addEventListener('click', function(e){
+      if (!accountMenu.contains(e.target) && !accountToggle.contains(e.target)) {
+        accountMenu.classList.remove('open');
+        accountToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // ---- Profile logic ----
+    // Placeholder "current user" data. Replace this with a real fetch from
+    // your backend/session when wiring this page up for real.
+    const currentUser = {
+      fullname: '',
+      ic: '',
+      category: '',
+      phone: '',
+      email: 'pengguna@perlis.gov.my',
+      address: ''
+    };
+
+    const fields = {
+      fullname: document.getElementById('fullname'),
+      ic: document.getElementById('ic'),
+      category: document.getElementById('category'),
+      phone: document.getElementById('phone'),
+      emailDisplay: document.getElementById('emailDisplay'),
+      address: document.getElementById('address')
+    };
+
+    function loadUserIntoForm(user){
+      fields.fullname.value = user.fullname || '';
+      fields.ic.value = user.ic || '';
+      fields.category.value = user.category || '';
+      fields.phone.value = user.phone || '';
+      fields.emailDisplay.value = user.email || '';
+      fields.address.value = user.address || '';
+      updateAvatar(user);
+    }
+
+    function updateAvatar(user){
+      const name = user.fullname && user.fullname.trim() ? user.fullname.trim() : 'Nama Pengguna';
+      document.getElementById('avatarName').textContent = name;
+      document.getElementById('avatarInitial').textContent = name.charAt(0).toUpperCase() || '?';
+      const catLabels = {
+        'pelajar':'Pelajar', 'tenaga-pengajar':'Tenaga Pengajar',
+        'orang-awam':'Orang Awam', 'kakitangan':'Kakitangan Jabatan'
+      };
+      document.getElementById('avatarRole').textContent = 'Kategori — ' + (catLabels[user.category] || 'Tiada');
+    }
+
+    loadUserIntoForm(currentUser);
+
+    document.getElementById('ic').addEventListener('input', (e) => {
+      let v = e.target.value.replace(/\D/g, '').slice(0, 12);
+      if (v.length > 6) v = v.slice(0,6) + '-' + v.slice(6);
+      if (v.length > 9) v = v.slice(0,9) + '-' + v.slice(9);
+      e.target.value = v;
+    });
+
+    fields.fullname.addEventListener('input', () => updateAvatar({
+      fullname: fields.fullname.value, category: fields.category.value
+    }));
+    fields.category.addEventListener('change', () => updateAvatar({
+      fullname: fields.fullname.value, category: fields.category.value
+    }));
+
+    document.getElementById('cancelBtn').addEventListener('click', () => {
+      loadUserIntoForm(currentUser);
+      document.getElementById('profileError').classList.remove('show');
+      document.getElementById('profileSuccess').classList.remove('show');
+    });
+
+    const form = document.getElementById('profileForm');
+    const errorBox = document.getElementById('profileError');
+    const successBox = document.getElementById('profileSuccess');
+    const saveBtn = document.getElementById('saveBtn');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      errorBox.classList.remove('show');
+      successBox.classList.remove('show');
+
+      if (!fields.fullname.value.trim() || !fields.ic.value.trim() || !fields.phone.value.trim()) {
+        errorBox.textContent = 'Sila lengkapkan nama, no. IC dan no. telefon.';
+        errorBox.classList.add('show');
+        return;
+      }
+
+      const icPattern = /^\d{6}-\d{2}-\d{4}$/;
+      if (!icPattern.test(fields.ic.value.trim())) {
+        errorBox.textContent = 'Format No. Kad Pengenalan tidak sah (XXXXXX-XX-XXXX).';
+        errorBox.classList.add('show');
+        return;
+      }
+
+      saveBtn.disabled = true;
+      saveBtn.textContent = 'Menyimpan...';
+
+      // Placeholder save. Replace with a real API call, e.g.:
+      // await fetch('/api/profile', { method: 'PUT', body: JSON.stringify({...}) })
+      setTimeout(() => {
+        currentUser.fullname = fields.fullname.value.trim();
+        currentUser.ic = fields.ic.value.trim();
+        currentUser.category = fields.category.value;
+        currentUser.phone = fields.phone.value.trim();
+        currentUser.address = fields.address.value.trim();
+
+        saveBtn.disabled = false;
+        saveBtn.textContent = 'Simpan Perubahan';
+        successBox.classList.add('show');
+        updateAvatar(currentUser);
+      }, 800);
+    });
+  </script>
+</body>
+</html>

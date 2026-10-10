@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260818-05-4bbf81c","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/7949ff62d67710d5.telemetry_sdk.js" integrity="sha512-KIvXA82Di44YY/RH9/63A9MuTuavYgDFG8PfErJn7Wli4K0LAOk+coo/aPXk3+ZNL96nHh9VYD4PE+fLes+laQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Tracker</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/0e8d3a91e1c6f495.data_sdk.js" integrity="sha512-c00oDoGjsMgluCLLEyVl3suwEkgjOGGplVFbsilUoBg4aMKNmsL3mwsc9r0dPn95qiSZyjBousQXgROkAW7p/w=="></script>
+
+<nav class="app-navbar">
+  <div class="navbar-inner">
+    <a href="e-digital-landing.html" class="navbar-brand">e-Digital &middot; Perlis</a>
+
+    <button type="button" class="navbar-toggle" id="navToggle" aria-label="Buka menu bahagian">&#9776;</button>
+
+    <ul class="navbar-links" id="navLinks">
+      <li><a href="Guru-maips.html">Guru MAIPs</a></li>
+      <li><a href="rekod-kiblat.html">Rekod Arah Kiblat</a></li>
+      <li><a href="permohonan-tauliah.html">Permohonan Keizinan Sementara</a></li>
+      <li><a href="permohonan-guru.html">Permohonan Guru MAIPs</a></li>
+      <li><a href="rekod-kehadiran.html">Rekod Kehadiran Guru</a></li>
+    </ul>
+
+    <div class="account-menu-wrap">
+      <button type="button" class="account-toggle" id="accountToggle" aria-haspopup="true" aria-expanded="false" aria-label="Menu akaun">
+        <span class="account-avatar">A</span>
+        <span class="account-hamburger">&#9776;</span>
+      </button>
+      <ul class="account-menu" id="accountMenu">
+        <li><a href="profile.html"><i data-lucide="user-round" class="w-4 h-4"></i> Kemaskini Profil</a></li>
+        <li><a href="change-password.html"><i data-lucide="key-round" class="w-4 h-4"></i> Tukar Kata Laluan</a></li>
+        <li><a href="change-email.html"><i data-lucide="mail" class="w-4 h-4"></i> Tukar E-mel</a></li>
+        <li><a href="help.html"><i data-lucide="circle-help" class="w-4 h-4"></i> Bantuan</a></li>
+        <li class="account-menu-divider"></li>
+        <li><a href="login.html" class="logout-link"><i data-lucide="log-out" class="w-4 h-4"></i> Log Keluar</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .app-navbar{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,#0d2b22,#173f34);border-bottom:2px solid #c8a55f;box-shadow:0 2px 10px rgba(0,0,0,.15);font-family:Arial,sans-serif}
+  .app-navbar .navbar-inner{max-width:1400px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px;position:relative}
+  .app-navbar .navbar-brand{color:#f4efe6;font-weight:700;font-size:15px;letter-spacing:.05em;text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:8px}
+  .app-navbar .navbar-brand::before{content:"";width:8px;height:8px;border-radius:50%;background:#c8a55f}
+
+  .app-navbar .navbar-links{display:flex;list-style:none;margin:0 auto 0 24px;padding:0;gap:4px;flex-wrap:wrap;flex:1}
+  .app-navbar .navbar-links a{display:block;padding:8px 14px;border-radius:8px;color:#dfe9df;text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap;transition:background .2s,color .2s}
+  .app-navbar .navbar-links a:hover{background:rgba(200,165,95,.15);color:#f4efe6}
+  .app-navbar .navbar-links a.active{background:#c8a55f;color:#0d2b22}
+  .app-navbar .navbar-toggle{display:none;background:none;border:none;color:#f4efe6;font-size:22px;cursor:pointer}
+
+  /* Account menu */
+  .account-menu-wrap{position:relative;flex-shrink:0}
+  .account-toggle{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(200,165,95,.35);border-radius:999px;padding:6px 10px 6px 6px;cursor:pointer;transition:background .2s,border-color .2s}
+  .account-toggle:hover{background:rgba(200,165,95,.15);border-color:#c8a55f}
+  .account-avatar{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#ead9a6,#c8a55f);color:#0d2b22;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center}
+  .account-hamburger{color:#dfe9df;font-size:16px;line-height:1}
+
+  .account-menu{
+    display:none;
+    position:absolute;
+    top:calc(100% + 8px);
+    right:0;
+    min-width:220px;
+    background:#fffefb;
+    border:1px solid #e2e8f0;
+    border-radius:12px;
+    box-shadow:0 16px 40px rgba(0,0,0,.18);
+    list-style:none;
+    margin:0;
+    padding:6px;
+    z-index:110;
+  }
+  .account-menu.open{display:block}
+  .account-menu li a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 12px;
+    border-radius:8px;
+    color:#17342c;
+    text-decoration:none;
+    font-size:13.5px;
+    font-weight:500;
+    transition:background .15s ease;
+  }
+  .account-menu li a:hover{background:#f1f5f9}
+  .account-menu li a.logout-link{color:#a14d3e}
+  .account-menu li a.logout-link:hover{background:#fbf2ef}
+  .account-menu-divider{height:1px;background:#e2e8f0;margin:6px 4px}
+
+  @media (max-width:900px){
+    .app-navbar .navbar-toggle{display:block}
+    .app-navbar .navbar-links{display:none;position:absolute;top:56px;left:0;right:0;background:#173f34;flex-direction:column;padding:8px;border-bottom:2px solid #c8a55f;margin:0}
+    .app-navbar .navbar-links.open{display:flex}
+    .app-navbar .navbar-links a{padding:10px 14px}
+  }
+</style>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function(){
+    document.getElementById('navLinks').classList.toggle('open');
+    document.getElementById('accountMenu').classList.remove('open');
+  });
+
+  const accountToggle = document.getElementById('accountToggle');
+  const accountMenu = document.getElementById('accountMenu');
+
+  accountToggle.addEventListener('click', function(e){
+    e.stopPropagation();
+    const isOpen = accountMenu.classList.toggle('open');
+    accountToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    document.getElementById('navLinks').classList.remove('open');
+  });
+
+  document.addEventListener('click', function(e){
+    if (!accountMenu.contains(e.target) && !accountToggle.contains(e.target)) {
+      accountMenu.classList.remove('open');
+      accountToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') {
+      accountMenu.classList.remove('open');
+      accountToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  if (window.lucide) { lucide.createIcons(); }
+</script>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <style>body { font-family: 'DM Sans', sans-serif; }</style>
+  <script src="/_sdk/eba18683f23e5798.resizing_sdk.js" type="text/javascript" integrity="sha512-E0UWUllhwPXaNJtjyTKXWKrIE+FruPfFpO4mRmMDP2LI+U9bOizy5npCq6xx/JyWcvSK7D3TFf2wFR2Mha9kbA=="></script>
+ <script src="/_sdk/0e8d3a91e1c6f495.data_sdk.js" integrity="sha512-c00oDoGjsMgluCLLEyVl3suwEkgjOGGplVFbsilUoBg4aMKNmsL3mwsc9r0dPn95qiSZyjBousQXgROkAW7p/w=="></script></head>
+ <body data-template-id="__page-root" class="min-h-screen" style="background: rgb(0, 31, 63);">
+  <header data-template-id="header-footer" class="border-b border-slate-200 px-6 py-5" style="background: rgb(243, 244, 246);">
+   <p data-template-id="department-name" class="canva-text text-sm font-medium mb-2" style="color: rgb(31, 41, 55); font-weight: 700; font-style: normal; font-size: 20px; letter-spacing: 0.17rem;">JABATAN MUFTI NEGERI PERLIS</p>
+   <h1 data-template-id="page-title" class="canva-text font-bold" style="color: rgb(15, 23, 42); font-weight: 700; font-style: normal; font-size: 32px;">Rekod Kehadiran Program</h1>
+   <p data-template-id="page-subtitle" class="canva-text mt-1" style="color: rgb(15, 23, 42); font-weight: 400; font-style: normal; font-size: 14px;">Sistem maklumat kehadiran program oleh Guru Agama dan Guru Al-Quran MAIPs</p>
+  </header>
+  <main class="max-w-6xl mx-auto p-6 space-y-8">
+   <h2 data-template-id="summary-title" class="canva-text font-semibold" style="color: rgb(30, 41, 59); font-weight: 600; font-style: normal; font-size: 18px;">REKOD KEHADIRAN</h2>
+   <section class="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div data-template-id="summary-names" class="canva-card bg-white rounded-xl shadow-sm border border-slate-200 p-6" style="background: rgb(255, 255, 255);">
+     <p class="text-sm text-slate-500 font-medium mb-2">Jumlah Nama Unik</p>
+     <p id="summary-names-count" class="text-4xl font-bold text-teal-600">0</p>
+    </div>
+    <div data-template-id="summary-kategori-guru-agama" class="canva-card bg-white rounded-xl shadow-sm border border-slate-200 p-6" style="background: rgb(255, 255, 255);">
+     <p class="text-sm text-slate-500 font-medium mb-2">Guru Agama</p>
+     <p id="summary-guru-agama-count" class="text-4xl font-bold text-blue-600">0</p>
+    </div>
+    <div data-template-id="summary-kategori-guru-alquran" class="canva-card bg-white rounded-xl shadow-sm border border-slate-200 p-6" style="background: rgb(255, 255, 255);">
+     <p class="text-sm text-slate-500 font-medium mb-2">Guru Al-Quran</p>
+     <p id="summary-guru-alquran-count" class="text-4xl font-bold text-purple-600">0</p>
+    </div>
+    <div data-template-id="summary-programs" class="canva-card bg-white rounded-xl shadow-sm border border-slate-200 p-6" style="background: rgb(255, 255, 255);">
+     <p class="text-sm text-slate-500 font-medium mb-2">Jumlah Program Unik</p>
+     <p id="summary-programs-count" class="text-4xl font-bold text-amber-600">0</p>
+    </div>
+   </section>
+   <form id="attendance-form" class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+    <h2 data-template-id="form-title" class="canva-text font-semibold mb-4" style="color: rgb(30, 41, 59); font-weight: 600; font-style: normal; font-size: 18px;">Tambah maklumat</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+     <div>
+      <label data-template-id="label-nama" for="field-nama" class="canva-text block text-sm font-medium mb-1" style="color: rgb(51, 65, 85); font-weight: 400; font-style: normal; font-size: 16px;">Nama</label><input id="field-nama" type="text" required="" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none">
+     </div>
+     <div>
+      <label data-template-id="label-kategori" for="field-kategori" class="canva-text block text-sm font-medium mb-1" style="color: rgb(51, 65, 85); font-weight: 400; font-style: normal; font-size: 16px;">Kategori</label><select id="field-kategori" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none"><option value="">Pilih Kategori</option><option value="Guru Agama">Guru Agama</option><option value="Guru Al-Quran">Guru Al-Quran</option></select>
+     </div>
+     <div>
+      <label data-template-id="label-nama-program" for="field-nama-program" class="canva-text block text-sm font-medium mb-1" style="color: rgb(51, 65, 85); font-weight: 400; font-style: normal; font-size: 16px;">Nama Program</label><input id="field-nama-program" type="text" required="" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none">
+     </div>
+     <div>
+      <label data-template-id="label-tarikh" for="field-tarikh" class="canva-text block text-sm font-medium mb-1" style="color: rgb(51, 65, 85); font-weight: 400; font-style: normal; font-size: 16px;">Tarikh</label><input id="field-tarikh" type="date" required="" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none">
+     </div>
+     <div>
+      <label data-template-id="label-tempat" for="field-tempat" class="canva-text block text-sm font-medium mb-1" style="color: rgb(51, 65, 85); font-weight: 400; font-style: normal; font-size: 16px;">Tempat</label><input id="field-tempat" type="text" required="" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none">
+     </div>
+     <div>
+      <label data-template-id="label-status" for="field-status" class="canva-text block text-sm font-medium mb-1" style="color: rgb(51, 65, 85); font-weight: 400; font-style: normal; font-size: 16px;">Status</label><select id="field-status" required="" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none"><option value="Hadir">Hadir</option><option value="Lewat">Lewat</option><option value="Tidak Hadir">Tidak Hadir</option></select>
+     </div>
+    </div>
+    <div class="mt-5">
+     <button data-template-id="submit-btn" type="submit" class="canva-button px-5 py-2.5 rounded-lg font-medium text-sm transition-opacity" style="background: rgb(13, 148, 136); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Tambah Rekod</button>
+    </div>
+    <div id="form-message" class="mt-3 text-sm hidden"></div>
+   </form>
+   <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+    <div class="px-6 py-4 border-b border-slate-200">
+     <div class="flex items-center justify-between mb-4">
+      <h2 data-template-id="table-title" class="canva-text font-semibold" style="color: rgb(30, 41, 59); font-weight: 600; font-style: normal; font-size: 18px;">Senarai Kehadiran</h2><span id="record-count" class="text-xs text-slate-500 bg-slate-100 px-2 py-1 rounded-full"></span>
+     </div>
+     <div class="flex flex-col md:flex-row gap-4">
+      <div class="flex-1">
+       <input id="search-input" type="text" placeholder="Cari nama atau program..." class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none">
+      </div><select id="filter-kategori" class="md:w-40 border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none"> <option value="">Semua Kategori</option> <option value="Guru Agama">Guru Agama</option> <option value="Guru Al-Quran">Guru Al-Quran</option> </select>
+     </div>
+    </div>
+    <div class="overflow-x-auto">
+     <table class="w-full text-sm">
+      <thead class="bg-slate-50 text-left">
+       <tr>
+        <th class="px-4 py-3 font-medium text-slate-600">Nama</th>
+        <th class="px-4 py-3 font-medium text-slate-600">Kategori</th>
+        <th class="px-4 py-3 font-medium text-slate-600">Nama Program</th>
+        <th class="px-4 py-3 font-medium text-slate-600">Tarikh</th>
+        <th class="px-4 py-3 font-medium text-slate-600">Tempat</th>
+        <th class="px-4 py-3 font-medium text-slate-600">Status</th>
+        <th class="px-4 py-3 font-medium text-slate-600"></th>
+       </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+     </table>
+    </div>
+    <p data-template-id="empty-state" id="empty-state" class="canva-text text-center py-10 text-slate-400" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Tiada rekod kehadiran lagi. Tambah di atas untuk bermula.</p>
+   </section>
+  </main>
+  <footer data-template-id="footer-text" class="canva-text text-center py-6 border-t border-slate-200 text-sm px-6 mt-8" style="background: rgb(243, 244, 246); color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 Jabatan Mufti Negeri Perlis. Hak cipta terpelihara</footer>
+  <script src="/_sdk/0e8d3a91e1c6f495.data_sdk.js" integrity="sha512-c00oDoGjsMgluCLLEyVl3suwEkgjOGGplVFbsilUoBg4aMKNmsL3mwsc9r0dPn95qiSZyjBousQXgROkAW7p/w=="></script>
+  <script src="/_sdk/a051f9537983733d.editing_sdk.js" integrity="sha512-IWn3eBHnVt7zQ0Rp79J72qSgJoLbskCA9lcfY4retf+5km4LjuhSHpvx+182KCHmEZ6EbJtWqVsybpV8Sd8PQQ=="></script>
+  <script>
+    let allData = [];
+    const form = document.getElementById('attendance-form');
+    const tableBody = document.getElementById('table-body');
+    const emptyState = document.getElementById('empty-state');
+    const recordCount = document.getElementById('record-count');
+    const formMessage = document.getElementById('form-message');
+    const submitBtn = form.querySelector('[data-template-id="submit-btn"]');
+    const searchInput = document.getElementById('search-input');
+    const filterKategori = document.getElementById('filter-kategori');
+
+    function getFilteredData() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const kategoriFilter = filterKategori.value;
+
+      return allData.filter(record => {
+        const matchSearch = searchTerm === '' || 
+          record.nama.toLowerCase().includes(searchTerm) || 
+          record.nama_program.toLowerCase().includes(searchTerm);
+        const matchKategori = kategoriFilter === '' || record.kategori === kategoriFilter;
+        return matchSearch && matchKategori;
+      });
+    }
+
+    function renderTable(data) {
+      // Update summary cards (always based on all data)
+      const uniqueNames = new Set(data.map(d => d.nama)).size;
+      const guruAgamaCount = data.filter(d => d.kategori === 'Guru Agama').length;
+      const guruAlQuranCount = data.filter(d => d.kategori === 'Guru Al-Quran').length;
+      const uniquePrograms = new Set(data.map(d => d.nama_program)).size;
+      
+      document.getElementById('summary-names-count').textContent = uniqueNames;
+      document.getElementById('summary-guru-agama-count').textContent = guruAgamaCount;
+      document.getElementById('summary-guru-alquran-count').textContent = guruAlQuranCount;
+      document.getElementById('summary-programs-count').textContent = uniquePrograms;
+
+      // Render filtered table
+      updateTableDisplay();
+    }
+
+    function updateTableDisplay() {
+      const filteredData = getFilteredData();
+      const ids = new Set(filteredData.map(d => d.__backendId));
+      [...tableBody.children].forEach(r => { if (!ids.has(r.dataset.id)) r.remove(); });
+
+      filteredData.forEach(record => {
+        let row = tableBody.querySelector(`[data-id="${record.__backendId}"]`);
+        if (!row) {
+          row = document.createElement('tr');
+          row.dataset.id = record.__backendId;
+          row.className = 'border-t border-slate-100 hover:bg-slate-50';
+          row.innerHTML = `<td class="px-4 py-3"></td><td class="px-4 py-3 text-slate-600"></td><td class="px-4 py-3 text-slate-600"></td><td class="px-4 py-3 text-slate-600"></td><td class="px-4 py-3 text-slate-600"></td><td class="px-4 py-3"><span class="px-2 py-0.5 rounded-full text-xs font-medium"></span></td><td class="px-4 py-3"><button type="button" class="del-btn text-slate-400 hover:text-red-500"><i data-lucide="trash-2" style="width:16px;height:16px"></i></button></td>`;
+          row.querySelector('.del-btn').addEventListener('click', () => deleteRecord(record));
+          tableBody.appendChild(row);
+        }
+        const cells = row.querySelectorAll('td');
+        cells[0].textContent = record.nama || '';
+        cells[1].textContent = record.kategori || '';
+        cells[2].textContent = record.nama_program || '';
+        cells[3].textContent = record.tarikh || '';
+        cells[4].textContent = record.tempat || '';
+        const badge = cells[5].querySelector('span');
+        badge.textContent = record.status || '';
+        badge.className = 'px-2 py-0.5 rounded-full text-xs font-medium ' + statusClass(record.status);
+      });
+
+      emptyState.classList.toggle('hidden', filteredData.length > 0);
+      recordCount.textContent = filteredData.length + ' rekod';
+      lucide.createIcons();
+    }
+
+    function statusClass(s) {
+      if (s === 'Hadir') return 'bg-emerald-100 text-emerald-700';
+      if (s === 'Lewat') return 'bg-amber-100 text-amber-700';
+      return 'bg-red-100 text-red-700';
+    }
+
+    async function deleteRecord(record) {
+      const result = await window.dataSdk.delete(record);
+      if (!result.isOk) showMessage('Gagal memadam rekod.', true);
+    }
+
+    function showMessage(text, isError) {
+      formMessage.textContent = text;
+      formMessage.className = 'mt-3 text-sm ' + (isError ? 'text-red-600' : 'text-emerald-600');
+      formMessage.classList.remove('hidden');
+      setTimeout(() => formMessage.classList.add('hidden'), 3000);
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (allData.length >= 999) { showMessage('Had maksimum 999 rekod telah dicapai.', true); return; }
+      submitBtn.disabled = true;
+      submitBtn.style.opacity = '0.5';
+
+      const result = await window.dataSdk.create({
+        nama: document.getElementById('field-nama').value,
+        kategori: document.getElementById('field-kategori').value,
+        nama_program: document.getElementById('field-nama-program').value,
+        tarikh: document.getElementById('field-tarikh').value,
+        tempat: document.getElementById('field-tempat').value,
+        status: document.getElementById('field-status').value
+      });
+
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = '1';
+      if (result.isOk) { form.reset(); showMessage('Kehadiran direkodkan!', false); }
+      else { showMessage('Gagal menyimpan. Sila cuba lagi.', true); }
+    });
+
+    searchInput.addEventListener('input', updateTableDisplay);
+    filterKategori.addEventListener('change', updateTableDisplay);
+
+    const handler = { onDataChanged(data) { allData = data; renderTable(data); } };
+    (async () => { const r = await window.dataSdk.init(handler); if (!r.isOk) showMessage('Gagal menyambung ke data.', true); lucide.createIcons(); })();
+  </script>
+ 
+</body></html>

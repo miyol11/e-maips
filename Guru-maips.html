@@ -1,0 +1,1783 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260818-05-4bbf81c","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/7949ff62d67710d5.telemetry_sdk.js" integrity="sha512-KIvXA82Di44YY/RH9/63A9MuTuavYgDFG8PfErJn7Wli4K0LAOk+coo/aPXk3+ZNL96nHh9VYD4PE+fLes+laQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Pengurusan Penempatan Guru MAIPs</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/0e8d3a91e1c6f495.data_sdk.js" integrity="sha512-c00oDoGjsMgluCLLEyVl3suwEkgjOGGplVFbsilUoBg4aMKNmsL3mwsc9r0dPn95qiSZyjBousQXgROkAW7p/w=="></script>
+
+  <nav class="app-navbar">
+  <div class="navbar-inner">
+    <a href="e-digital-landing.html" class="navbar-brand">e-Digital &middot; Perlis</a>
+
+    <button type="button" class="navbar-toggle" id="navToggle" aria-label="Buka menu bahagian">&#9776;</button>
+
+    <ul class="navbar-links" id="navLinks">
+      <li><a href="Guru-maips.html">Guru MAIPs</a></li>
+      <li><a href="rekod-kiblat.html">Rekod Arah Kiblat</a></li>
+      <li><a href="permohonan-tauliah.html">Permohonan Keizinan Sementara</a></li>
+      <li><a href="permohonan-guru.html">Permohonan Guru MAIPs</a></li>
+      <li><a href="rekod-kehadiran.html">Rekod Kehadiran Guru</a></li>
+    </ul>
+
+    <div class="account-menu-wrap">
+      <button type="button" class="account-toggle" id="accountToggle" aria-haspopup="true" aria-expanded="false" aria-label="Menu akaun">
+        <span class="account-avatar">A</span>
+        <span class="account-hamburger">&#9776;</span>
+      </button>
+      <ul class="account-menu" id="accountMenu">
+        <li><a href="profile.html"><i data-lucide="user-round" class="w-4 h-4"></i> Kemaskini Profil</a></li>
+        <li><a href="change-password.html"><i data-lucide="key-round" class="w-4 h-4"></i> Tukar Kata Laluan</a></li>
+        <li><a href="change-email.html"><i data-lucide="mail" class="w-4 h-4"></i> Tukar E-mel</a></li>
+        <li><a href="help.html"><i data-lucide="circle-help" class="w-4 h-4"></i> Bantuan</a></li>
+        <li class="account-menu-divider"></li>
+        <li><a href="login.html" class="logout-link"><i data-lucide="log-out" class="w-4 h-4"></i> Log Keluar</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .app-navbar{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,#0d2b22,#173f34);border-bottom:2px solid #c8a55f;box-shadow:0 2px 10px rgba(0,0,0,.15);font-family:Arial,sans-serif}
+  .app-navbar .navbar-inner{max-width:1400px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px;position:relative}
+  .app-navbar .navbar-brand{color:#f4efe6;font-weight:700;font-size:15px;letter-spacing:.05em;text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:8px}
+  .app-navbar .navbar-brand::before{content:"";width:8px;height:8px;border-radius:50%;background:#c8a55f}
+
+  .app-navbar .navbar-links{display:flex;list-style:none;margin:0 auto 0 24px;padding:0;gap:4px;flex-wrap:wrap;flex:1}
+  .app-navbar .navbar-links a{display:block;padding:8px 14px;border-radius:8px;color:#dfe9df;text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap;transition:background .2s,color .2s}
+  .app-navbar .navbar-links a:hover{background:rgba(200,165,95,.15);color:#f4efe6}
+  .app-navbar .navbar-links a.active{background:#c8a55f;color:#0d2b22}
+  .app-navbar .navbar-toggle{display:none;background:none;border:none;color:#f4efe6;font-size:22px;cursor:pointer}
+
+  /* Account menu */
+  .account-menu-wrap{position:relative;flex-shrink:0}
+  .account-toggle{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(200,165,95,.35);border-radius:999px;padding:6px 10px 6px 6px;cursor:pointer;transition:background .2s,border-color .2s}
+  .account-toggle:hover{background:rgba(200,165,95,.15);border-color:#c8a55f}
+  .account-avatar{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#ead9a6,#c8a55f);color:#0d2b22;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center}
+  .account-hamburger{color:#dfe9df;font-size:16px;line-height:1}
+
+  .account-menu{
+    display:none;
+    position:absolute;
+    top:calc(100% + 8px);
+    right:0;
+    min-width:220px;
+    background:#fffefb;
+    border:1px solid #e2e8f0;
+    border-radius:12px;
+    box-shadow:0 16px 40px rgba(0,0,0,.18);
+    list-style:none;
+    margin:0;
+    padding:6px;
+    z-index:110;
+  }
+  .account-menu.open{display:block}
+  .account-menu li a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 12px;
+    border-radius:8px;
+    color:#17342c;
+    text-decoration:none;
+    font-size:13.5px;
+    font-weight:500;
+    transition:background .15s ease;
+  }
+  .account-menu li a:hover{background:#f1f5f9}
+  .account-menu li a.logout-link{color:#a14d3e}
+  .account-menu li a.logout-link:hover{background:#fbf2ef}
+  .account-menu-divider{height:1px;background:#e2e8f0;margin:6px 4px}
+
+  @media (max-width:900px){
+    .app-navbar .navbar-toggle{display:block}
+    .app-navbar .navbar-links{display:none;position:absolute;top:56px;left:0;right:0;background:#173f34;flex-direction:column;padding:8px;border-bottom:2px solid #c8a55f;margin:0}
+    .app-navbar .navbar-links.open{display:flex}
+    .app-navbar .navbar-links a{padding:10px 14px}
+  }
+</style>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function(){
+    document.getElementById('navLinks').classList.toggle('open');
+    document.getElementById('accountMenu').classList.remove('open');
+  });
+
+  const accountToggle = document.getElementById('accountToggle');
+  const accountMenu = document.getElementById('accountMenu');
+
+  accountToggle.addEventListener('click', function(e){
+    e.stopPropagation();
+    const isOpen = accountMenu.classList.toggle('open');
+    accountToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    document.getElementById('navLinks').classList.remove('open');
+  });
+
+  document.addEventListener('click', function(e){
+    if (!accountMenu.contains(e.target) && !accountToggle.contains(e.target)) {
+      accountMenu.classList.remove('open');
+      accountToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') {
+      accountMenu.classList.remove('open');
+      accountToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Optional: hook up real logout logic here instead of just navigating.
+  // document.querySelector('.logout-link').addEventListener('click', function(e){
+  //   e.preventDefault();
+  //   // clear session / call your logout API, then redirect:
+  //   window.location.href = 'login.html';
+  // });
+
+  if (window.lucide) { lucide.createIcons(); }
+</script>
+
+  <style>
+    :root{
+      --ink:#0f172a;
+      --muted:#64748b;
+      --sage:#475569;
+      --sage-dark:#334155;
+      --cream:#ffffff;
+      --paper:#ffffff;
+      --line:#e2e8f0;
+      --amber:#f59e0b;
+      --olive:#64748b;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      width:100%;
+      font-family:Arial, sans-serif;
+      color:var(--ink);
+    }
+    .display-font{font-family:Arial, sans-serif}
+    .paper-shadow{box-shadow:0 20px 50px rgba(38,52,45,.10)}
+    .soft-shadow{box-shadow:0 10px 24px rgba(38,52,45,.08)}
+    .focus-ring:focus{
+      outline:none;
+      box-shadow:0 0 0 3px rgba(111,141,117,.22);
+      border-color:#6f8d75;
+    }
+    .row-fade{animation:fadeIn .25s ease both}
+    @keyframes fadeIn{
+      from{opacity:0; transform:translateY(4px)}
+      to{opacity:1; transform:translateY(0)}
+    }
+    @keyframes subtleShift{
+      0%, 100%{transform:translate(0, 0)}
+      50%{transform:translate(8px, 4px)}
+    }
+    .islamic-bg{
+      background:linear-gradient(135deg, #1a3a34 0%, #2d5550 25%, #3d6b5f 50%, #2d5550 75%, #1a3a34 100%);
+      position:relative;
+      overflow-x:hidden;
+    }
+    .islamic-bg::before{
+      content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background-image:
+        radial-gradient(circle at 20% 50%, rgba(95, 161, 137, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(111, 141, 117, 0.06) 0%, transparent 50%),
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 255, 255, 0.02) 35px, rgba(255, 255, 255, 0.02) 70px),
+        repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(255, 255, 255, 0.015) 35px, rgba(255, 255, 255, 0.015) 70px);
+      pointer-events:none;
+      animation:subtleShift 20s ease-in-out infinite;
+    }
+    .islamic-bg::after{
+      content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background-image:
+        repeating-conic-gradient(from 0deg at 30% 70%, rgba(95, 161, 137, 0.04) 0deg, transparent 90deg),
+        repeating-conic-gradient(from 0deg at 70% 30%, rgba(79, 139, 117, 0.03) 0deg, transparent 90deg);
+      background-size:200px 200px;
+      pointer-events:none;
+    }
+  </style>
+  <script src="/_sdk/eba18683f23e5798.resizing_sdk.js" type="text/javascript" integrity="sha512-E0UWUllhwPXaNJtjyTKXWKrIE+FruPfFpO4mRmMDP2LI+U9bOizy5npCq6xx/JyWcvSK7D3TFf2wFR2Mha9kbA=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full min-h-screen islamic-bg" style="background: rgb(46, 106, 79);">
+  <div class="w-full min-h-screen">
+   <header class="w-full bg-[#f8fafc] relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+     <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#64748b]/15 to-transparent rounded-full -mr-48 -mt-48"></div>
+     <div class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-[#64748b]/10 to-transparent rounded-full -ml-40 -mb-40"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-10 md:py-14 relative z-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+     <div class="flex-1">
+      <p data-template-id="eyebrow-label" class="canva-text uppercase tracking-[0.32em] text-[12px] font-bold mb-1 text-[#64748b]" style="color: rgb(100, 116, 139); font-weight: 700; font-style: normal; font-size: 21px; letter-spacing: 0.27rem;">jabatan mufti negeri perlis</p>
+      <p data-template-id="department-label" class="canva-text text-[14px] font-semibold mb-3 text-[#475569]" style="color: rgb(71, 85, 105); font-weight: 600; letter-spacing: 0.491rem;"></p>
+      <h1 data-template-id="page-title" class="canva-text display-font leading-tight text-[#0f172a] mb-4" style="color: rgb(15, 23, 42); font-weight: 700; font-style: normal; font-size: 32px;">Sistem Pengurusan Penempatan dan Jadual Guru MAIPs</h1>
+      <p data-template-id="page-subtitle" class="canva-text max-w-2xl text-[#64748b]" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 17px; letter-spacing: 0.095rem;">Jadual kelas mengajar bagi Guru-guru lantikan MAIPs</p>
+     </div>
+     <div data-template-id="date-badge" class="canva-tag inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-[#e2e8f0] bg-white text-[#0f172a] text-sm font-semibold shadow-lg hover:bg-[#f1f5f9] transition" style="background: rgb(255, 255, 255); color: rgb(15, 23, 42);">
+      <i data-lucide="calendar-days" class="w-4 h-4"></i> <span id="today-label">Today</span>
+     </div>
+    </div>
+   </header>
+   <main class="max-w-7xl mx-auto px-5 sm:px-8 py-7 lg:py-10">
+    <section class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-7" aria-label="Schedule summary">
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-teachers-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Jumlah Bilangan Guru</p><span class="w-8 h-8 rounded-full bg-[#dbeafe] text-[#0284c7] grid place-items-center"> <i data-lucide="users" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="teacher-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-quran-teachers-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Guru al-Quran</p><span class="w-8 h-8 rounded-full bg-[#dcfce7] text-[#16a34a] grid place-items-center"> <i data-lucide="book-marked" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="quran-teacher-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-religion-teachers-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Guru Agama</p><span class="w-8 h-8 rounded-full bg-[#fed7aa] text-[#92400e] grid place-items-center"> <i data-lucide="scroll" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="religion-teacher-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-both-teachers-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Guru Al-Quran dan Agama</p><span class="w-8 h-8 rounded-full bg-[#c7d2e8] text-[#5b5fc7] grid place-items-center"> <i data-lucide="users" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="both-teacher-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-mosques-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Jumlah Masjid</p><span class="w-8 h-8 rounded-full bg-[#e0e7ff] text-[#4f46e5] grid place-items-center"> <i data-lucide="building-2" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="mosque-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-other-mosque-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Lain-lain
+Nama Masjid</p><span class="w-8 h-8 rounded-full bg-[#fecaca] text-[#dc2626] grid place-items-center"> <i data-lucide="building" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="other-mosque-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-classes-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Bilangan kelas 
+pengajian (sesi kelas)</p><span class="w-8 h-8 rounded-full bg-[#f3e8ff] text-[#9333ea] grid place-items-center"> <i data-lucide="book-open" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="class-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-monthly-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Jumlah sesi bulanan</p><span class="w-8 h-8 rounded-full bg-[#fef3c7] text-[#d97706] grid place-items-center"> <i data-lucide="calendar-range" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="monthly-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-books-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Bilangan Kitab</p><span class="w-8 h-8 rounded-full bg-[#ede9fe] text-[#7c3aed] grid place-items-center"> <i data-lucide="book" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="book-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-guru-takmir-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Guru Takmir (Ya)</p><span class="w-8 h-8 rounded-full bg-[#c7d2e8] text-[#5b5fc7] grid place-items-center"> <i data-lucide="star" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="guru-takmir-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+    </section>
+    <section class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-7" aria-label="Category summary">
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-akidah-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Akidah</p><span class="w-8 h-8 rounded-full bg-[#fecaca] text-[#dc2626] grid place-items-center"> <i data-lucide="scroll" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="akidah-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-tazkiyah-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Tazkiyah An-nafs</p><span class="w-8 h-8 rounded-full bg-[#fbcfe8] text-[#be185d] grid place-items-center"> <i data-lucide="heart" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="tazkiyah-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-fiqah-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Feqah</p><span class="w-8 h-8 rounded-full bg-[#fed7aa] text-[#92400e] grid place-items-center"> <i data-lucide="scale" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="fiqah-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-hadis-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Hadis dan Sirah</p><span class="w-8 h-8 rounded-full bg-[#d1d5db] text-[#374151] grid place-items-center"> <i data-lucide="scroll" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="hadis-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-ulum-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Ulum al-Quran</p><span class="w-8 h-8 rounded-full bg-[#a5f3fc] text-[#0369a1] grid place-items-center"> <i data-lucide="book-marked" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="ulum-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-tajwid-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Tajwid</p><span class="w-8 h-8 rounded-full bg-[#f5f3ff] text-[#7c3aed] grid place-items-center"> <i data-lucide="music" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="tajwid-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+     <article class="bg-[#ffffff] border border-[#e2e8f0] rounded-2xl p-3 soft-shadow">
+      <div class="flex items-center justify-between mb-2">
+       <p data-template-id="summary-khas-label" class="canva-text text-[12px] font-medium" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 13px;">Khas</p><span class="w-8 h-8 rounded-full bg-[#fef08a] text-[#ca8a04] grid place-items-center"> <i data-lucide="sparkles" class="w-4 h-4"></i> </span>
+      </div>
+      <p id="khas-count" class="display-font text-lg font-semibold">0</p>
+     </article>
+    </section>
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-7 mb-7">
+     <aside class="lg:col-span-1 flex flex-col">
+      <section data-template-id="quran-teachers-card" class="canva-card bg-[#ffffff] border border-[#e2e8f0] rounded-[24px] p-6 paper-shadow flex-1 flex flex-col" style="background: rgb(255, 255, 255);">
+       <h3 data-template-id="quran-teachers-title" class="canva-text display-font font-semibold text-[#1f2a24] mb-4" style="color: rgb(31, 42, 36); font-weight: 700; font-style: normal; font-size: 18px;">Senarai Guru Al-Quran</h3>
+       <div id="quran-teachers-list" class="space-y-2 max-h-80 overflow-y-auto"></div>
+      </section>
+      <section data-template-id="religion-teachers-card" class="canva-card bg-[#ffffff] border border-[#e2e8f0] rounded-[24px] p-6 paper-shadow flex-1 flex flex-col mt-7" style="background: rgb(255, 255, 255);">
+       <h3 data-template-id="religion-teachers-title" class="canva-text display-font font-semibold text-[#1f2a24] mb-4" style="color: rgb(31, 42, 36); font-weight: 700; font-style: normal; font-size: 18px;">Senarai Guru Agama</h3>
+       <div id="religion-teachers-list" class="space-y-2 max-h-80 overflow-y-auto"></div>
+      </section>
+     </aside>
+     <aside class="lg:col-span-2">
+      <aside data-template-id="form-card" class="canva-card bg-[#ffffff] border border-[#e2e8f0] rounded-[24px] p-6 paper-shadow flex flex-col" style="background: rgb(255, 255, 255);">
+       <div class="mb-6">
+        <h2 data-template-id="form-title" class="canva-text display-font" style="color: rgb(31, 42, 36); font-weight: 700; font-style: normal; font-size: 24px;">Tambah jadual guru</h2>
+        <p data-template-id="form-helper" class="canva-text mt-2" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 14px;">Sila lengkapkan maklumat yang berkaitan dan kekerapan kelas pengajian bagi tempoh sebulan. Maklumat mengikut setiap masjid.</p>
+       </div>
+       <form id="schedule-form" class="space-y-4">
+        <div>
+         <label data-template-id="teacher-label" for="teacher_name" class="canva-text block text-sm font-medium mb-2" style="color: rgb(64, 81, 71); font-weight: 600; font-style: normal; font-size: 12px;">Nama Penuh*</label> <input data-template-id="teacher-input" id="teacher_name" type="text" class="canva-input focus-ring w-full rounded-xl border border-[#e2e8f0] bg-white px-4 py-3 text-sm text-[#0f172a]" placeholder="cth. Ustaz Ahmad" style="font-weight: 400; font-style: normal; font-size: 12px;">
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+         <div>
+          <label data-template-id="tarikh-lantikan-label" for="tarikh_lantikan" class="canva-text block text-sm font-medium mb-2" style="color: rgb(64, 81, 71); font-weight: 600; font-style: normal; font-size: 12px;">Tarikh Lantikan</label> <input id="tarikh_lantikan" type="date" class="focus-ring w-full rounded-xl border border-[#e2e8f0] bg-white px-4 py-3 text-sm text-[#0f172a]">
+         </div>
+         <div>
+          <label data-template-id="tarikh-penempatan-label" for="tarikh_penempatan" class="canva-text block text-sm font-medium mb-2" style="color: rgb(64, 81, 71); font-weight: 600; font-style: normal; font-size: 12px;">Tarikh Penempatan</label> <input id="tarikh_penempatan" type="date" class="focus-ring w-full rounded-xl border border-[#e2e8f0] bg-white px-4 py-3 text-sm text-[#0f172a]">
+         </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+         <div>
+          <label data-template-id="teacher-category-label" for="teacher_category" class="canva-text block text-sm font-medium mb-2" style="color: rgb(64, 81, 71); font-weight: 600; font-style: normal; font-size: 12px;">Kategori Guru*</label> <select id="teacher_category" class="focus-ring w-full rounded-xl border border-[#e2e8f0] bg-white px-4 py-3 text-sm text-[#0f172a]"> <option value="">-- Pilih Kategori Guru --</option> <option>Guru al-Quran</option> <option>Guru Agama</option> <option>Guru Al-Quran dan Agama</option> </select>
+         </div>
+         <div>
+          <label data-template-id="guru-takmir-label" for="guru_takmir" class="canva-text block text-sm font-medium mb-2" style="color: rgb(64, 81, 71); font-weight: 600; font-style: normal; font-size: 12px;">Guru Takmir*</label> <select id="guru_takmir" class="focus-ring w-full rounded-xl border border-[#e2e8f0] bg-white px-4 py-3 text-sm text-[#0f172a]"> <option value="">-- Pilih Guru Takmir --</option> <option>Ya</option> <option>Tidak</option> </select>
+         </div>
+        </div>
+        <div>
+         <label data-template-id="mosque-label" for="mosque_name" class="canva-text block text-sm font-medium mb-2" style="color: rgb(64, 81, 71); font-weight: 600; font-style: normal; font-size: 12px;">Nama masjid*</label> <select id="mosque_name" class="focus-ring w-full rounded-xl border border-[#e2e8f0] bg-white px-4 py-3 text-sm text-[#0f172a]"> <option value="">-- Pilih Masjid --</option> <option>MASJID SOLAHUDDIN AL-AYYUBI, PADANG BESAR (U)</option> <option>MASJID AL-MUSTAQIM, FELDA RIMBA MAS</option> <option>MASJID OSMANIAH, BATU 20</option> <option>MASJID AL-HUDA, FELDA MATA AYER</option> <option>MASJID AN-NUR, KG CHANTIK</option> <option>MASJID NURUL NAIM, FELCRA LUBUK SIREH</option> <option>MASJID JABAL A'LA, KG MELAYU</option> <option>MASJID AL-AZIM, TITI TINGGI ULU</option> <option>MASJID AL-MUSTAGHFIRIN, BUKIT CHABANG</option> <option>MASJID NURUL HUSNA, WANG KELIAN</option> <option>MASJID AL-MUBARAK, TASOH</option> <option>MASJID JAMEK BESERI, BESERI</option> <option>MASJID AL-HAKIM, PADANG MALAU</option> <option>MASJID AR-RAHMAN, KG. BELUKAR</option> <option>MASJID AL-IHSAN, KG DARAT</option> <option>MASJID MAHMUDIAH, BUKIT KETERI</option> <option>MASJID AL-HUSNA, BATU BERTANGKUP</option> <option>MASJID NURUL HUDA, FELDA CHUPING</option> <option>MASJID AR-RIDHA, PANGGAS</option> <option>MASJID AS-SOLIHIN, KG BAWAH BUKIT</option> <option>MASJID AR-RASHID, KUBANG PERUN</option> <option>MASJID AL-HAKAM, KG. KOK KLANG</option> <option>MASJID NURUS SAADAH, KG BANGGOL SENA</option> <option>MASJID AS-SOBIRIN, GIAL</option> <option>MASJID AS-SYAKIRIN, ORAN</option> <option>MASJID AL-MUNAWWARAH, KG. MATA AYER</option> <option>MASJID AL-ISLAH, NGULANG</option> <option>MASJID ALI BIN ABI TALIB, PERAWAH</option> <option>MASJID NURUS SAID, SANTAN</option> <option>MASJID AS-SAADAH, BAROH</option> <option>MASJID AL-GHOFUR, KG PADANG LATI</option> <option>MASID JANNATUN NAIM, BESERI SUNGAI PAYA</option> <option>MASJID AS-SAKINAH, PADANG MELANGIT</option> <option>MASJID AL-KHAUTHAR, KG PAYA</option> <option>MASJID SIRAJUDDIN, PADANG PAUH</option> <option>MASJID NURUL HIKMAH, WANG BINTONG</option> <option>MASJID DARUL ULUM, WANG ULU</option> <option>MASJID AL-HUSSAIN, KUALA PERLIS</option> <option>MASJID AL-ISTIQAMAH, TELOK JAMBU</option> <option>MASJID NURUL IMAN, KG NESAM KURONG BATANG</option> <option>MASJID AL-IMARAH, ABI BATAS PAIP</option> <option>MASJID NURUL HAMIM, KECHOR</option> <option>MASJID AL-MUQARROBIN, BEHOR EMPIANG</option> <option>MASJID AL-SHAHRANI, BEHOR LATEH</option> <option>MASJID AL-HASSAN, KG JEJAWI DALAM</option> <option>MASJID MUHAMMADI, SUNGAI ADAM JEJAWI</option> <option>MASJID AT-TAQWA, ALOR REDIS</option> <option>MASJID TUN ABDUL RAZAK, REPOH</option> <option>MASJID DARUL IBADAH, PADANG BEHOR</option> <option>MASJID AL-AMIN, SEMPERING</option> <option>MASJID AL-GHUFRAN, BATU 2 LAMA</option> <option>MASJID ALWI, KANGAR</option> <option>MASJID AL-ARIFIN, PADANG KATONG</option> <option>MASJID SAIDINA UMAR AL-KHATTAB, KG GUAR SYED ALWI</option> <option>MASJID SAIDINA ABU BAKAR AS-SIDDIQ, SEBERANG RAMAI</option> <option>MASJID AR-RAHMANIAH, SEBERANG TOK PI</option> <option>MASJID AL-FIRDAUS, KG PADANG BESAR SELATAN</option> <option>MASJID TUANKU SYED FAIZUDDIN PUTRA JAMALULLAIL, BATU 5</option> <option>MASJID AL A'LA, BEHOR TEMAK</option> <option>MASJID AL-MUSTAQIM, SERIAB</option> <option>MASJID AR-RAHIM, TITI TOK BANDAR</option> <option>MASJID JAMEK, BINJAL</option> <option>MASJID AL-MUKMININ, KOTA KAYANG</option> <option>MASJID AL-FURQAN, KG SENTUA UTAN AJI</option> <option>MASJID AL-AZIZ, KG. TOK KAYA</option> <option>MASJID ALI IMRAN, ULU PAUH</option> <option>MASJID AL-MURSYID, GURING</option> <option>MASJID AL-MASYHOOR, PADANG SIDING</option> <option>MASJID MUHAMMADIAH, KG GUAR GAJAH</option> <option>MASJID NEGERI, ARAU</option> <option>MASJID NURUL MUKMININ, KG ALOR ARA</option> <option>MASJID IBNU TAIMIYYAH, TAMBUN TULANG</option> <option>MASJID AL-FALAH, BEHOR MEMPELAM</option> <option>MASJID AL-ABRAR, KG KUBANG GAJAH</option> <option>MASJID AL-ITTIFAQIAH, MENGKUANG LAYAR</option> <option>MASJID AL-HASHIMI, LONG BOH</option> <option>MASJID UTHMAN BIN AL-AFFAN</option> <option>MASJID AL-BARAKAH, JELEMPOK</option> <option>MASJID AL-IKRAM, KG SENA KURUNG ANAI</option> <option>MASJID AL-MUTTAQIN, KG PADANG BESAR, KURONG ANAI</option> <option>MASJID NURUS SALAM, BEHOR MENTALON</option> <option>MASJID BABUL IBADAH, KG CEMUMAR</option> <option>MASJID NURUL MUTTAQIN, KG CHE OK</option> <option>MASJID NURUL YAQIN, KG. CHANTIK BANGUN</option> <option>MASJID AL-UBUDIYYAH, KG SEMATANG SERDANG</option> <option>MASJID AL-HIDAYAH, TITI BERATAP</option> <option>MASJID AR-RIDHUAN, KG BEHOR MASJID</option> <option>MASJID PUTRA, SIMPANG EMPAT</option> <option>MASJID AL-ILMI, KG SUNGAI BEREMBANG</option> <option>MASJID AL-MUNAWWARAH, KG SUNGAI BUGIS</option> <option>MASJID AL-MAKMUR, KG BONGOR KUDUNG</option> <option>MASJID AL-FURQAN, KG BUNGA EMAS</option> <option>MASJID AL-AZHAR, KG TEBOK</option> <option>MASJID DARUL SALAM, KG PADANG KERIA</option> <option>MASJID AL-MAGHFIRAH, SG. KOROK</option> <option>MASJID AS-SYAKUR, KG PERMATANG BONGOR</option> <option>MASJID DATO' JAAFAR HASSAN, KG SUNGAI PADANG</option> <option>MASJID AR-RAHMAN, KG SIMPANG SANGLANG</option> <option>MASJID AMEER FAWWAZ, KG SUNGAI BARU</option> <option>MASJID TUANKU SYED PUTRA JAMALULLAIL, KANGAR</option> <option>MASJID AR-RAUDHAH, SG. BATU PAHAT</option> <option>Lain-lain</option> </select>
+        </div>
+        <div id="other-mosque-container" class="hidden">
+         <label data-template-id="other-mosque-label" for="other_mosque_name" class="canva-text block text-sm font-medium mb-2" style="color: rgb(64, 81, 71); font-weight: 600; font-style: normal; font-size: 12px;">Nyatakan sekiranya lain-lain</label> <input data-template-id="other-mosque-input" id="other_mosque_name" type="text" class="canva-input focus-ring w-full rounded-xl border border-[#e2e8f0] bg-white px-4 py-3 text-sm text-[#0f172a]" placeholder="cth. Masjid Baru" style="font-weight: 400; font-style: normal; font-size: 12px;">
+        </div>
+        <div>
+         <label data-template-id="reference-book-label" for="reference_book" class="canva-text block text-sm font-medium mb-2" style="color: rgb(64, 81, 71); font-weight: 600; font-style: normal; font-size: 12px;">Nama kitab rujukan</label> <input data-template-id="reference-book-input" id="reference_book" type="text" class="canva-input focus-ring w-full rounded-xl border border-[#e2e8f0] bg-white px-4 py-3 text-sm text-[#0f172a]" placeholder="cth. Al-Quran, Hadith, Fiqh" style="font-weight: 400; font-style: normal; font-size: 12px;">
+        </div>
+        <div>
+         <label data-template-id="category-label" for="category" class="canva-text block text-sm font-medium mb-2" style="color: rgb(64, 81, 71); font-weight: 600; font-style: normal; font-size: 12px;">Kategori Kitab rujukan</label> <select id="category" class="focus-ring w-full rounded-xl border border-[#e2e8f0] bg-white px-4 py-3 text-sm text-[#0f172a]"> <option value="">-- Pilih Kategori --</option> <option>Akidah</option> <option>Tazkiyah An-nafs</option> <option>Feqah</option> <option>Hadis dan Sirah</option> <option>Ulum al-Quran</option> <option>Tajwid</option> <option>Khas</option> </select>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+         <div>
+          <label data-template-id="class-label" for="class_type" class="canva-text block text-sm font-medium mb-2" style="color: rgb(64, 81, 71); font-weight: 600; font-style: normal; font-size: 14px;">Jenis kelas (sesi)</label> <select id="class_type" class="focus-ring w-full rounded-xl border border-[#e2e8f0] bg-white px-4 py-3 text-sm text-[#0f172a]"> <option>Kuliah Subuh</option> <option>Kuliah Dhuha</option> <option>Kuliah Zohor</option> <option>Kuliah Asar</option> <option>Kuliah Maghrib</option> <option>Ceramah</option> <option>Lain-lain</option> </select>
+         </div>
+         <div>
+          <label data-template-id="day-label" for="day" class="canva-text block text-sm font-medium mb-2" style="color: rgb(64, 81, 71); font-weight: 600; font-style: normal; font-size: 12px;">Hari pengajaran</label> <select id="day" class="focus-ring w-full rounded-xl border border-[#e2e8f0] bg-white px-4 py-3 text-sm text-[#0f172a]"> <option>Isnin</option> <option>Selasa</option> <option>Rabu</option> <option>Khamis</option> <option>Jumaat</option> <option>Sabtu</option> <option>Ahad</option> </select>
+         </div>
+         <div>
+          <label data-template-id="frequency-label" for="frequency_per_month" class="canva-text block text-sm font-medium mb-2" style="color: rgb(64, 81, 71); font-weight: 600; font-style: normal; font-size: 12px;">Kekerapan per bulan (sesi kelas pengajaran)</label> <input data-template-id="frequency-input" id="frequency_per_month" type="number" min="1" step="1" class="canva-input focus-ring w-full rounded-xl border border-[#e2e8f0] bg-white px-4 py-3 text-sm text-[#0f172a]" placeholder="cth. 4" style="font-weight: 400; font-style: normal; font-size: 12px;">
+         </div>
+        </div>
+        <p id="form-message" class="text-sm min-h-[20px]" aria-live="polite"></p><button data-template-id="submit-button" id="submit-button" type="submit" class="canva-button w-full inline-flex items-center justify-center gap-2 rounded-xl px-4 py-3 font-semibold transition hover:opacity-95 focus:outline-none focus:ring-4 focus:ring-[#3b82f6]/20" style="background: rgb(85, 112, 93); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 12px;">Tambah ke jadual</button>
+       </form>
+      </aside>
+     </aside>
+    </section>
+    <section data-template-id="mosque-list-card" class="canva-card bg-[#ffffff] border border-[#e2e8f0] rounded-[24px] paper-shadow overflow-hidden mb-7" style="background: rgb(255, 255, 255);">
+     <div class="px-6 sm:px-7 py-6 flex flex-col h-full">
+      <h2 data-template-id="mosque-list-title" class="canva-text display-font font-semibold text-[#1f2a24] mb-4 flex-shrink-0" style="color: rgb(31, 42, 36); font-weight: 700; font-style: normal; font-size: 24px;">Senarai Nama Masjid</h2>
+      <div id="mosque-list-container" class="flex-1 flex flex-col">
+       <div class="space-y-3 flex-1"></div>
+      </div>
+      <div id="mosque-empty-state" class="text-center py-8 flex-shrink-0">
+       <p data-template-id="mosque-empty-text" class="canva-text text-[#94a3b8]" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 12px;">Tiada masjid lagi</p>
+      </div>
+      <div id="mosque-pagination-controls" class="border-t border-[#e2e8f0] bg-[#f8fafc] flex items-center justify-between gap-4 -mx-6 sm:-mx-7 mt-4 px-6 sm:px-7 py-3 hidden">
+       <div class="text-xs text-[#64748b]"><span id="mosque-pagination-info">0 of 0</span>
+       </div>
+       <div class="flex gap-2"><button id="mosque-prev-page" type="button" class="canva-button inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-xs font-semibold bg-white border border-[#e2e8f0] text-[#475569] hover:bg-[#f1f5f9] transition disabled:opacity-50 disabled:cursor-not-allowed"> <i data-lucide="chevron-left" class="w-4 h-4"></i> <span>Sebelumnya</span> </button>
+        <div id="mosque-page-numbers" class="flex gap-1"></div><button id="mosque-next-page" type="button" class="canva-button inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-xs font-semibold bg-white border border-[#e2e8f0] text-[#475569] hover:bg-[#f1f5f9] transition disabled:opacity-50 disabled:cursor-not-allowed"> <span>Seterusnya</span> <i data-lucide="chevron-right" class="w-4 h-4"></i> </button>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section data-template-id="register-card" class="canva-card bg-[#ffffff] border border-[#e2e8f0] rounded-[24px] paper-shadow overflow-hidden" style="background: rgb(255, 255, 255);">
+     <div class="px-6 sm:px-7 py-6 border-b border-[#e2e8f0] flex flex-col gap-5">
+      <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+       <div>
+        <h2 data-template-id="register-title" class="canva-text display-font" style="color: rgb(31, 42, 36); font-weight: 700; font-style: normal; font-size: 24px;">Jadual Penempatan dan Mengajar</h2>
+        <p data-template-id="register-helper" class="canva-text mt-2" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 14px;">Bagi masjid-masjid negeri Perlis.</p>
+       </div>
+       <div class="w-full md:w-1/2">
+        <label data-template-id="search-label" for="search-input" class="canva-text block text-xs uppercase tracking-[0.18em] font-semibold mb-2" style="color: rgb(64, 81, 71); font-weight: 700; font-style: normal; font-size: 12px;">Cari rekod</label>
+        <div class="relative">
+         <i data-lucide="search" class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-[#94a3b8]"></i> <input data-template-id="search-input" id="search-input" type="text" class="canva-input focus-ring w-full rounded-xl border border-[#e2e8f0] bg-white pl-10 pr-4 py-3 text-sm text-[#0f172a]" placeholder="Cari guru, masjid atau kelas" style="font-weight: 400; font-style: normal; font-size: 12px;">
+        </div>
+       </div>
+      </div>
+      <div class="flex gap-2 border-b border-[#e2e8f0] -mx-6 sm:-mx-7 px-6 sm:px-7"><button id="tab-records" type="button" class="tab-button active px-4 py-3 text-sm font-medium border-b-2 border-[#55705d] text-[#55705d] transition" data-tab="records"> <i data-lucide="list" class="w-4 h-4 inline mr-2"></i><span data-template-id="tab-records-label" class="canva-text" style="color: rgb(85, 112, 93); font-weight: 600; font-style: normal; font-size: 12px;">Senarai Rekod</span> </button> <button id="tab-monthly" type="button" class="tab-button px-4 py-3 text-sm font-medium border-b-2 border-transparent text-[#94a3b8] hover:text-[#64748b] transition" data-tab="monthly"> <i data-lucide="calendar" class="w-4 h-4 inline mr-2"></i><span data-template-id="tab-monthly-label" class="canva-text" style="color: rgb(111, 141, 117); font-weight: 600; font-style: normal; font-size: 12px;">Jadual Bulanan</span> </button>
+      </div>
+      <div class="flex gap-2 flex-wrap -mx-6 sm:-mx-7 px-6 sm:px-7 py-3 border-b border-[#e2e8f0] bg-[#f8fafc]"><button id="filter-all" type="button" class="category-filter active px-3 py-2 text-xs font-semibold rounded-lg bg-[#55705d] text-white transition" data-category="all"><span data-template-id="filter-all-label" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 12px;">Semua</span></button> <button id="filter-quran" type="button" class="category-filter px-3 py-2 text-xs font-semibold rounded-lg bg-white border border-[#e2e8f0] text-[#475569] hover:bg-[#f1f5f9] transition" data-category="Guru al-Quran"><span data-template-id="filter-quran-label" class="canva-text" style="color: rgb(71, 85, 105); font-weight: 600; font-style: normal; font-size: 12px;">Guru Al-Quran</span></button> <button id="filter-religion" type="button" class="category-filter px-3 py-2 text-xs font-semibold rounded-lg bg-white border border-[#e2e8f0] text-[#475569] hover:bg-[#f1f5f9] transition" data-category="Guru Agama"><span data-template-id="filter-religion-label" class="canva-text" style="color: rgb(71, 85, 105); font-weight: 600; font-style: normal; font-size: 12px;">Guru Agama</span></button> <button id="filter-both" type="button" class="category-filter px-3 py-2 text-xs font-semibold rounded-lg bg-white border border-[#e2e8f0] text-[#475569] hover:bg-[#f1f5f9] transition" data-category="Guru Al-Quran dan Agama"><span data-template-id="filter-both-label" class="canva-text" style="color: rgb(71, 85, 105); font-weight: 600; font-style: normal; font-size: 12px;">Guru Al-Quran dan Agama</span></button>
+       <div class="w-full border-t border-[#e2e8f0] pt-3"></div><button id="filter-takmir-all" type="button" class="takmir-filter active px-3 py-2 text-xs font-semibold rounded-lg bg-[#fef3c7] text-[#ef4444] transition" data-takmir="all"><span data-template-id="filter-takmir-all-label" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 12px;">Semua</span></button> <button id="filter-takmir-ya" type="button" class="takmir-filter px-3 py-2 text-xs font-semibold rounded-lg bg-white border border-[#e2e8f0] text-[#ef4444] hover:bg-[#f1f5f9] transition" data-takmir="Ya"><span data-template-id="filter-takmir-ya-label" class="canva-text" style="color: rgb(71, 85, 105); font-weight: 600; font-style: normal; font-size: 12px;">Guru Takmir (Ya)</span></button> <button id="filter-takmir-tidak" type="button" class="takmir-filter px-3 py-2 text-xs font-semibold rounded-lg bg-white border border-[#e2e8f0] text-[#ef4444] hover:bg-[#f1f5f9] transition" data-takmir="Tidak"><span data-template-id="filter-takmir-tidak-label" class="canva-text" style="color: rgb(71, 85, 105); font-weight: 600; font-style: normal; font-size: 12px;">Bukan Guru Takmir</span></button>
+      </div>
+     </div>
+     <div id="tab-content-records" class="tab-content">
+      <div class="overflow-x-auto">
+       <table class="w-full text-sm">
+        <thead class="bg-[#f1f5f9] border-b border-[#e2e8f0]">
+         <tr class="text-left text-[11px] uppercase tracking-[0.12em] text-[#64748b]">
+          <th data-template-id="table-teacher-heading" class="canva-text px-3 py-3 font-semibold w-1/5" style="color: rgb(123, 132, 127); font-weight: 600; font-style: normal; font-size: 12px;">Guru</th>
+          <th data-template-id="table-mosque-heading" class="canva-text px-3 py-3 font-semibold w-1/4" style="color: rgb(123, 132, 127); font-weight: 600; font-style: normal; font-size: 12px;">Masjid</th>
+          <th data-template-id="table-class-heading" class="canva-text px-3 py-3 font-semibold w-1/6" style="color: rgb(123, 132, 127); font-weight: 600; font-style: normal; font-size: 12px;">Kelas</th>
+          <th data-template-id="table-reference-book-heading" class="canva-text px-3 py-3 font-semibold w-1/6" style="color: rgb(123, 132, 127); font-weight: 600; font-style: normal; font-size: 12px;">Kitab Rujukan</th>
+          <th data-template-id="table-category-heading" class="canva-text px-3 py-3 font-semibold w-1/6" style="color: rgb(123, 132, 127); font-weight: 600; font-style: normal; font-size: 12px;">Kategori</th>
+          <th data-template-id="table-action-heading" class="canva-text px-3 py-3 font-semibold text-right w-auto" style="color: rgb(123, 132, 127); font-weight: 600; font-style: normal; font-size: 12px;">Tindakan</th>
+         </tr>
+        </thead>
+        <tbody id="schedule-body" class="divide-y divide-[#f1f5f9]"></tbody>
+       </table>
+      </div>
+      <div id="empty-state" class="px-6 py-16 text-center">
+       <div class="mx-auto mb-4 w-14 h-14 rounded-full bg-[#dbeafe] text-[#0284c7] grid place-items-center">
+        <i data-lucide="calendar-days" class="w-6 h-6"></i>
+       </div>
+       <h3 data-template-id="empty-state-title" class="canva-text display-font" style="color: rgb(38, 53, 45); font-weight: 600; font-style: normal; font-size: 19px;">Tiada jadual lagi</h3>
+       <p data-template-id="empty-state-copy" class="canva-text mt-2 max-w-md mx-auto" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 14px;">Sila tambah maklumat yang berkiatan </p>
+      </div>
+      <div id="pagination-controls" class="px-6 py-6 border-t border-[#e2e8f0] bg-[#f8fafc] flex items-center justify-between gap-4">
+       <div class="text-xs text-[#64748b]"><span id="pagination-info">0 of 0</span>
+       </div>
+       <div class="flex gap-2"><button id="prev-page" type="button" class="canva-button inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-xs font-semibold bg-white border border-[#e2e8f0] text-[#475569] hover:bg-[#f1f5f9] transition disabled:opacity-50 disabled:cursor-not-allowed"> <i data-lucide="chevron-left" class="w-4 h-4"></i> <span>Sebelumnya</span> </button>
+        <div id="page-numbers" class="flex gap-1"></div><button id="next-page" type="button" class="canva-button inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-xs font-semibold bg-white border border-[#e2e8f0] text-[#475569] hover:bg-[#f1f5f9] transition disabled:opacity-50 disabled:cursor-not-allowed"> <span>Seterusnya</span> <i data-lucide="chevron-right" class="w-4 h-4"></i> </button>
+       </div>
+      </div>
+     </div>
+     <div id="tab-content-monthly" class="tab-content hidden">
+      <div class="overflow-x-auto">
+       <table class="w-full text-sm">
+        <thead class="bg-[#f1f5f9] border-b border-[#e2e8f0]">
+         <tr class="text-left text-[11px] uppercase tracking-[0.12em] text-[#64748b]">
+          <th class="px-3 py-3 font-semibold w-1/5">Guru</th>
+          <th data-template-id="monthly-table-mosque-heading" class="canva-text px-3 py-3 font-semibold w-1/4" style="color: rgb(123, 132, 127); font-weight: 600; font-style: normal; font-size: 12px;">Masjid</th>
+          <th data-template-id="monthly-table-class-heading" class="canva-text px-3 py-3 font-semibold w-1/6" style="color: rgb(123, 132, 127); font-weight: 600; font-style: normal; font-size: 12px;">Kelas</th>
+          <th data-template-id="monthly-table-day-heading" class="canva-text px-3 py-3 font-semibold w-1/6" style="color: rgb(123, 132, 127); font-weight: 600; font-style: normal; font-size: 12px;">Hari</th>
+          <th data-template-id="monthly-table-sessions-heading" class="canva-text px-3 py-3 font-semibold w-1/6" style="color: rgb(123, 132, 127); font-weight: 600; font-style: normal; font-size: 12px;">Sesi/Bulan</th>
+          <th data-template-id="monthly-table-action-heading" class="canva-text px-3 py-3 font-semibold text-right w-auto" style="color: rgb(123, 132, 127); font-weight: 600; font-style: normal; font-size: 12px;">Tindakan</th>
+         </tr>
+        </thead>
+        <tbody id="monthly-schedule-body" class="divide-y divide-[#f1f5f9]"></tbody>
+       </table>
+      </div>
+      <div id="empty-state-monthly" class="px-6 py-16 text-center hidden">
+       <div class="mx-auto mb-4 w-14 h-14 rounded-full bg-[#dbeafe] text-[#0284c7] grid place-items-center">
+        <i data-lucide="calendar-days" class="w-6 h-6"></i>
+       </div>
+       <h3 data-template-id="empty-state-monthly-title" class="canva-text display-font" style="color: rgb(38, 53, 45); font-weight: 600; font-style: normal; font-size: 19px;">Tiada jadual lagi</h3>
+       <p data-template-id="empty-state-monthly-copy" class="canva-text mt-2 max-w-md mx-auto" style="color: rgb(108, 117, 111); font-weight: 400; font-style: normal; font-size: 14px;">Sila tambah maklumat yang berkaitan</p>
+      </div>
+      <div id="monthly-pagination-controls" class="border-t border-[#e2e8f0] bg-[#f8fafc] flex items-center justify-between gap-4 -mx-6 -mb-6 mt-0 px-6 py-6">
+       <div class="text-xs text-[#64748b]"><span id="monthly-pagination-info">0 of 0</span>
+       </div>
+       <div class="flex gap-2"><button id="monthly-prev-page" type="button" class="canva-button inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-xs font-semibold bg-white border border-[#e2e8f0] text-[#475569] hover:bg-[#f1f5f9] transition disabled:opacity-50 disabled:cursor-not-allowed"> <i data-lucide="chevron-left" class="w-4 h-4"></i> <span>Sebelumnya</span> </button>
+        <div id="monthly-page-numbers" class="flex gap-1"></div><button id="monthly-next-page" type="button" class="canva-button inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-xs font-semibold bg-white border border-[#e2e8f0] text-[#475569] hover:bg-[#f1f5f9] transition disabled:opacity-50 disabled:cursor-not-allowed"> <span>Seterusnya</span> <i data-lucide="chevron-right" class="w-4 h-4"></i> </button>
+       </div>
+      </div>
+     </div>
+    </section>
+   </main>
+  </div>
+  <template id="row-template">
+   <tr data-template-id="schedule-row" class="canva-table row-fade bg-white text-sm">
+    <td data-template-id="teacher-cell" class="canva-text px-3 py-3 font-medium text-[#0f172a] w-1/5"></td>
+    <td data-template-id="mosque-cell" class="canva-text px-3 py-3 text-[#475569] w-1/4"></td>
+    <td data-template-id="class-cell" class="canva-text px-3 py-3 text-[#475569] w-1/6"></td>
+    <td data-template-id="reference-book-cell" class="canva-text px-3 py-3 text-[#475569] w-1/6"></td>
+    <td data-template-id="category-cell" class="canva-text px-3 py-3 text-[#475569] w-1/6"></td>
+    <td class="px-3 py-3 text-right w-auto">
+     <div class="inline-flex gap-1">
+      <button data-template-id="edit-button" type="button" class="canva-button edit-btn inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-xs font-semibold transition bg-[#f5a623] text-white hover:bg-[#e69500] hover:shadow-md active:scale-95"> <i data-lucide="pencil" class="w-4 h-4"></i> <span>Ubah</span> </button> <button data-template-id="delete-button" type="button" class="canva-button delete-btn inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-xs font-semibold transition bg-[#ef4444] text-white hover:bg-[#dc2626] hover:shadow-md active:scale-95"> <i data-lucide="trash-2" class="w-4 h-4"></i> <span>Hapus</span> </button>
+     </div></td>
+   </tr>
+  </template>
+  <template id="teacher-month-template">
+   <div data-template-id="teacher-month-section" class="canva-section border-l-4 border-[#55705d] pl-6 py-4">
+    <h3 data-template-id="teacher-month-title" class="canva-text display-font font-semibold text-[#1f2a24] mb-4"></h3>
+    <div class="space-y-3 teacher-month-records"></div>
+   </div>
+  </template>
+  <template id="monthly-record-template">
+   <tr data-template-id="monthly-record-item" class="canva-table row-fade bg-white text-sm border-b border-[#f1f5f9]">
+    <td data-template-id="monthly-record-mosque" class="canva-text px-3 py-3 text-[#475569] w-1/4"></td>
+    <td data-template-id="monthly-record-class" class="canva-text px-3 py-3 text-[#475569] w-1/6"></td>
+    <td class="px-3 py-3 w-1/6"><span data-template-id="monthly-record-day-pill" class="canva-tag inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold"></span></td>
+    <td data-template-id="monthly-record-sessions" class="canva-text px-3 py-3 text-[#475569] w-1/6"></td>
+    <td class="px-3 py-3 text-right w-auto"><button data-template-id="monthly-view-button" type="button" class="canva-button view-monthly-btn inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-xs font-semibold transition bg-[#0369a1] text-white hover:bg-[#025aa2] hover:shadow-md active:scale-95"> <i data-lucide="eye" class="w-4 h-4"></i> <span>Lihat</span> </button></td>
+   </tr>
+  </template>
+  <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 pointer-events-none transition-all duration-300 bg-[#1e293b] text-white px-4 py-3 rounded-xl shadow-xl text-sm z-50"></div><button id="back-to-top" data-template-id="back-to-top-button" class="canva-button fixed bottom-20 right-5 inline-flex items-center justify-center w-10 h-10 rounded-full shadow-lg transition opacity-0 pointer-events-none hover:scale-110" title="Back to top" style="background: rgb(85, 112, 93); color: rgb(255, 255, 255);"> <i data-lucide="arrow-up" class="w-5 h-5"></i> </button>
+  <div id="detail-modal" class="fixed inset-0 bg-black/40 hidden opacity-0 pointer-events-none transition-opacity duration-300 z-40" data-modal-backdrop="">
+   <div class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white rounded-2xl shadow-xl max-w-3xl w-full max-h-[85vh] overflow-y-auto transform transition-transform duration-300 scale-95 data-modal-content">
+     <div class="px-8 py-7 border-b border-[#e2e8f0] flex items-center justify-between">
+      <h2 class="text-[18px] font-semibold text-[#0f172a]">Maklumat Penuh Guru</h2><button id="close-modal" type="button" class="text-[#64748b] hover:text-[#0f172a] transition"> <i data-lucide="x" class="w-5 h-5"></i> </button>
+     </div>
+     <div class="px-8 py-7 space-y-5">
+      <div class="pb-5 border-b border-[#f1f5f9]">
+       <p class="text-[11px] uppercase tracking-[0.18em] font-semibold text-[#64748b] mb-2">Nama Guru</p>
+       <p id="modal-teacher-name" class="text-[12px] font-medium text-[#0f172a]"></p>
+      </div>
+      <div class="pb-5 border-b border-[#f1f5f9]">
+       <p class="text-[11px] uppercase tracking-[0.18em] font-semibold text-[#64748b] mb-3">Masjid</p>
+       <div id="modal-mosques-list" class="space-y-2"></div>
+      </div>
+      <div class="pb-5 border-b border-[#f1f5f9]">
+       <p class="text-[11px] uppercase tracking-[0.18em] font-semibold text-[#64748b] mb-3">Jenis Kelas dan Kitab Rujukan</p>
+       <div id="modal-class-book-list" class="space-y-2"></div>
+      </div>
+      <div class="grid grid-cols-2 gap-8 pb-5 border-b border-[#f1f5f9]">
+       <div>
+        <p class="text-[11px] uppercase tracking-[0.18em] font-semibold text-[#64748b] mb-2">Kepakaran</p>
+        <p id="modal-category" class="text-[12px] text-[#475569]"></p>
+       </div>
+       <div>
+        <p class="text-[11px] uppercase tracking-[0.18em] font-semibold text-[#64748b] mb-2">Kategori Guru</p>
+        <p id="modal-teacher-category" class="text-[12px] text-[#475569]"></p>
+       </div>
+      </div>
+      <div class="grid grid-cols-2 gap-8 pb-5 border-b border-[#f1f5f9]">
+       <div>
+        <p class="text-[11px] uppercase tracking-[0.18em] font-semibold text-[#64748b] mb-2">Guru Takmir</p>
+        <p id="modal-guru-takmir" class="text-[12px] text-[#475569]"></p>
+       </div>
+       <div>
+        <p class="text-[11px] uppercase tracking-[0.18em] font-semibold text-[#64748b] mb-2">Tarikh Lantikan</p>
+        <p id="modal-tarikh-lantikan" class="text-[12px] text-[#475569]"></p>
+       </div>
+      </div>
+      <div class="pb-5 border-b border-[#f1f5f9]">
+       <p class="text-[11px] uppercase tracking-[0.18em] font-semibold text-[#64748b] mb-2">Tarikh Penempatan</p>
+       <p id="modal-tarikh-penempatan" class="text-[12px] text-[#475569]"></p>
+      </div>
+      <div class="pb-5">
+       <p class="text-[11px] uppercase tracking-[0.18em] font-semibold text-[#64748b] mb-3">Hari dan Kekerapan Pengajaran</p>
+       <div id="modal-day-frequency-list" class="space-y-2"></div>
+      </div>
+     </div>
+     <div class="px-8 py-5 border-t border-[#e2e8f0] flex gap-3">
+      <button id="modal-print-btn" type="button" class="flex-1 px-4 py-2 rounded-lg bg-[#0369a1] text-white font-semibold hover:bg-[#025aa2] transition inline-flex items-center justify-center gap-2"> <i data-lucide="printer" class="w-4 h-4"></i> <span>Cetak</span> </button> <button id="modal-close-btn" type="button" class="flex-1 px-4 py-2 rounded-lg bg-[#55705d] text-white font-semibold hover:bg-[#476049] transition"> Tutup </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <footer class="w-full border-t border-[#e2e8f0] bg-[#f8fafc] mt-10">
+   <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6">
+    <p data-template-id="page-footer" class="canva-text text-center" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 13px;">Bahagian Falak dan Pengajaran, Jabatan Mufti Negeri Perlis @2026</p>
+   </div>
+  </footer>
+  <script src="/_sdk/a051f9537983733d.editing_sdk.js" integrity="sha512-IWn3eBHnVt7zQ0Rp79J72qSgJoLbskCA9lcfY4retf+5km4LjuhSHpvx+182KCHmEZ6EbJtWqVsybpV8Sd8PQQ=="></script>
+  <script>
+    const state = {
+      records: [],
+      filter: '',
+      categoryFilter: 'all',
+      takmirFilter: 'all',
+      currentPage: 1,
+      recordsPerPage: 10,
+      monthlyCurrentPage: 1,
+      monthlyRecordsPerPage: 10
+    };
+
+    const tbody = document.getElementById('schedule-body');
+    const emptyState = document.getElementById('empty-state');
+    const form = document.getElementById('schedule-form');
+    const submitButton = document.getElementById('submit-button');
+    const submitLabel = submitButton.querySelector('.submit-label');
+    const submitLoading = submitButton.querySelector('.submit-loading');
+    const formMessage = document.getElementById('form-message');
+    const searchInput = document.getElementById('search-input');
+
+    function dayClasses(day) {
+      const map = {
+        Isnin: 'bg-[#dbeafe] text-[#0284c7]',
+        Selasa: 'bg-[#e0e7ff] text-[#4f46e5]',
+        Rabu: 'bg-[#f3e8ff] text-[#9333ea]',
+        Khamis: 'bg-[#fef3c7] text-[#d97706]',
+        Jumaat: 'bg-[#dcfce7] text-[#16a34a]',
+        Sabtu: 'bg-[#fce7f3] text-[#be185d]',
+        Ahad: 'bg-[#fed7aa] text-[#92400e]'
+      };
+      return map[day] || 'bg-[#f1f5f9] text-[#475569]';
+    }
+
+    function filteredRecords() {
+      const q = state.filter.trim().toLowerCase();
+      let filtered = state.records;
+
+      // Apply text search filter
+      if (q) {
+        filtered = filtered.filter(r =>
+          (r.teacher_name || '').toLowerCase().includes(q) ||
+          (r.mosque_name || '').toLowerCase().includes(q) ||
+          (r.class_type || '').toLowerCase().includes(q) ||
+          (r.reference_book || '').toLowerCase().includes(q) ||
+          (r.day || '').toLowerCase().includes(q)
+        );
+      }
+
+      // Apply category filter
+      if (state.categoryFilter !== 'all') {
+        filtered = filtered.filter(r => r.teacher_category === state.categoryFilter);
+      }
+
+      // Apply takmir filter
+      if (state.takmirFilter !== 'all') {
+        filtered = filtered.filter(r => r.guru_takmir === state.takmirFilter);
+      }
+
+      return filtered;
+    }
+
+    function getPaginatedRecords() {
+      const filtered = filteredRecords();
+      const start = (state.currentPage - 1) * state.recordsPerPage;
+      const end = start + state.recordsPerPage;
+      return {
+        records: filtered.slice(start, end),
+        total: filtered.length,
+        totalPages: Math.ceil(filtered.length / state.recordsPerPage)
+      };
+    }
+
+    function updatePagination() {
+      const { total, totalPages } = getPaginatedRecords();
+      const start = total === 0 ? 0 : (state.currentPage - 1) * state.recordsPerPage + 1;
+      const end = Math.min(state.currentPage * state.recordsPerPage, total);
+      
+      document.getElementById('pagination-info').textContent = `${start}–${end} daripada ${total}`;
+      
+      const prevBtn = document.getElementById('prev-page');
+      const nextBtn = document.getElementById('next-page');
+      prevBtn.disabled = state.currentPage === 1;
+      nextBtn.disabled = state.currentPage >= totalPages;
+
+      // Render page number buttons (show up to 5 pages)
+      const pageNumbers = document.getElementById('page-numbers');
+      pageNumbers.innerHTML = '';
+      
+      const maxPagesToShow = 15;
+      let startPage = Math.max(1, state.currentPage - Math.floor(maxPagesToShow / 2));
+      let endPage = Math.min(totalPages, startPage + maxPagesToShow - 1);
+      if (endPage - startPage + 1 < maxPagesToShow) {
+        startPage = Math.max(1, endPage - maxPagesToShow + 1);
+      }
+
+      for (let i = startPage; i <= endPage; i++) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = `inline-flex items-center justify-center rounded-lg px-3 py-2 text-xs font-semibold transition ${
+          i === state.currentPage
+            ? 'bg-[#55705d] text-white'
+            : 'bg-white border border-[#e2e8f0] text-[#475569] hover:bg-[#f1f5f9]'
+        }`;
+        btn.textContent = i;
+        btn.addEventListener('click', () => {
+          state.currentPage = i;
+          renderRows();
+          updatePagination();
+        });
+        pageNumbers.appendChild(btn);
+      }
+    }
+
+    function updateSummary() {
+      const teachers = new Set(state.records.map(r => (r.teacher_name || '').trim()).filter(Boolean));
+      const mosques = new Set(state.records.map(r => (r.mosque_name || '').trim()).filter(Boolean));
+      const classes = new Set(state.records.map(r => (r.class_type || '').trim()).filter(Boolean));
+      const books = new Set(state.records.map(r => (r.reference_book || '').trim()).filter(Boolean));
+      const monthly = state.records.reduce((sum, r) => sum + (Number(r.frequency_per_month) || 0), 0);
+      const otherMosques = state.records.filter(r => (r.mosque_name || '').trim().toLowerCase() === 'lain-lain').length;
+
+      // Count by teacher category
+      const quranTeachers = new Set(state.records.filter(r => r.teacher_category === 'Guru al-Quran').map(r => (r.teacher_name || '').trim()).filter(Boolean)).size;
+      const religionTeachers = new Set(state.records.filter(r => r.teacher_category === 'Guru Agama').map(r => (r.teacher_name || '').trim()).filter(Boolean)).size;
+      const bothTeachers = new Set(state.records.filter(r => r.teacher_category === 'Guru Al-Quran dan Agama').map(r => (r.teacher_name || '').trim()).filter(Boolean)).size;
+
+      // Count by category
+      const akidah = state.records.filter(r => r.category === 'Akidah').length;
+      const tazkiyah = state.records.filter(r => r.category === 'Tazkiyah An-nafs').length;
+      const fiqah = state.records.filter(r => r.category === 'Feqah').length;
+      const hadis = state.records.filter(r => r.category === 'Hadis dan Sirah').length;
+      const ulum = state.records.filter(r => r.category === 'Ulum al-Quran').length;
+      const tajwid = new Set(state.records.filter(r => r.category === 'Tajwid').map(r => (r.teacher_name || '').trim()).filter(Boolean)).size;
+      const khas = state.records.filter(r => r.category === 'Khas').length;
+
+      document.getElementById('teacher-count').textContent = teachers.size;
+      document.getElementById('quran-teacher-count').textContent = quranTeachers;
+      document.getElementById('religion-teacher-count').textContent = religionTeachers;
+      document.getElementById('both-teacher-count').textContent = bothTeachers;
+      document.getElementById('mosque-count').textContent = mosques.size;
+      document.getElementById('other-mosque-count').textContent = otherMosques;
+      document.getElementById('class-count').textContent = classes.size;
+      document.getElementById('book-count').textContent = books.size;
+      document.getElementById('monthly-count').textContent = monthly;
+
+      document.getElementById('akidah-count').textContent = akidah;
+      document.getElementById('tazkiyah-count').textContent = tazkiyah;
+      document.getElementById('fiqah-count').textContent = fiqah;
+      document.getElementById('hadis-count').textContent = hadis;
+      document.getElementById('ulum-count').textContent = ulum;
+      document.getElementById('tajwid-count').textContent = tajwid;
+      document.getElementById('khas-count').textContent = khas;
+
+      // Count guru takmir (Ya)
+      const guruTakmirCount = state.records.filter(r => r.guru_takmir === 'Ya').length;
+      document.getElementById('guru-takmir-count').textContent = guruTakmirCount;
+    }
+
+    function createRow(record) {
+      const fragment = document.getElementById('row-template').content.cloneNode(true);
+      const row = fragment.querySelector('tr');
+      row.dataset.id = record.__backendId;
+
+      row.querySelector('[data-template-id="teacher-cell"]').textContent = record.teacher_name || '';
+      row.querySelector('[data-template-id="mosque-cell"]').textContent = record.mosque_name || '';
+      row.querySelector('[data-template-id="class-cell"]').textContent = record.class_type || '';
+      row.querySelector('[data-template-id="reference-book-cell"]').textContent = record.reference_book || '';
+      row.querySelector('[data-template-id="category-cell"]').textContent = record.category || '';
+      // Day and frequency columns removed from this view
+
+      const deleteBtn = row.querySelector('.delete-btn');
+      deleteBtn.addEventListener('click', () => handleDeleteClick(record.__backendId, deleteBtn));
+
+      const editBtn = row.querySelector('.edit-btn');
+      editBtn.addEventListener('click', () => handleEditClick(record));
+
+      return row;
+    }
+
+    function updateRow(row, record) {
+      row.querySelector('[data-template-id="teacher-cell"]').textContent = record.teacher_name || '';
+      row.querySelector('[data-template-id="mosque-cell"]').textContent = record.mosque_name || '';
+      row.querySelector('[data-template-id="class-cell"]').textContent = record.class_type || '';
+      row.querySelector('[data-template-id="reference-book-cell"]').textContent = record.reference_book || '';
+      row.querySelector('[data-template-id="category-cell"]').textContent = record.category || '';
+      // Day and frequency columns removed from this view
+    }
+
+    function renderRows() {
+      const { records: visible, total } = getPaginatedRecords();
+      const existing = new Map([...tbody.children].map(row => [row.dataset.id, row]));
+
+      visible.forEach(record => {
+        if (existing.has(record.__backendId)) {
+          updateRow(existing.get(record.__backendId), record);
+          existing.delete(record.__backendId);
+        } else {
+          tbody.appendChild(createRow(record));
+        }
+      });
+
+      existing.forEach(row => row.remove());
+      emptyState.classList.toggle('hidden', total > 0);
+      document.getElementById('pagination-controls').classList.toggle('hidden', total === 0);
+      lucide.createIcons();
+    }
+
+    function setSubmitting(isSubmitting) {
+      submitButton.disabled = isSubmitting;
+      submitButton.classList.toggle('opacity-70', isSubmitting);
+      submitButton.classList.toggle('cursor-not-allowed', isSubmitting);
+      submitLabel.classList.toggle('hidden', isSubmitting);
+      submitLoading.classList.toggle('hidden', !isSubmitting);
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.classList.remove('opacity-0', 'translate-y-4');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-4');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2200);
+    }
+
+    function handleEditClick(record) {
+      // Populate form with record data
+      document.getElementById('teacher_name').value = record.teacher_name || '';
+      document.getElementById('mosque_name').value = record.mosque_name || '';
+      
+      // Handle custom mosque name for "Lain-lain"
+      const mosqueSelect = document.getElementById('mosque_name');
+      const otherMosqueContainer = document.getElementById('other-mosque-container');
+      const otherMosqueInput = document.getElementById('other_mosque_name');
+      
+      if (mosqueSelect.value === 'Lain-lain') {
+        otherMosqueContainer.classList.remove('hidden');
+        otherMosqueInput.value = record.mosque_name || '';
+      } else {
+        otherMosqueContainer.classList.add('hidden');
+        otherMosqueInput.value = '';
+      }
+      
+      document.getElementById('class_type').value = record.class_type || '';
+      document.getElementById('reference_book').value = record.reference_book || '';
+      document.getElementById('category').value = record.category || '';
+      document.getElementById('teacher_category').value = record.teacher_category || '';
+      document.getElementById('day').value = record.day || 'Isnin';
+      document.getElementById('frequency_per_month').value = record.frequency_per_month || '';
+      document.getElementById('tarikh_lantikan').value = record.tarikh_lantikan || '';
+      document.getElementById('tarikh_penempatan').value = record.tarikh_penempatan || '';
+      document.getElementById('guru_takmir').value = record.guru_takmir || '';
+
+      // Store edit mode state
+      form.dataset.editId = record.__backendId;
+      
+      // Update submit button text
+      submitLabel.textContent = 'Kemaskini jadual';
+      
+      // Scroll to form
+      form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.getElementById('teacher_name').focus();
+    }
+
+    function handleViewClick(record) {
+      // Find all records matching the teacher name
+      const teacherName = record.teacher_name || '';
+      const teacherRecords = state.records.filter(r => r.teacher_name === teacherName);
+      
+      // Compile all unique reference books, categories, and mosques
+      const referenceBooks = [...new Set(teacherRecords.map(r => (r.reference_book || '').trim()).filter(Boolean))];
+      const categories = [...new Set(teacherRecords.map(r => (r.category || '').trim()).filter(Boolean))];
+      const mosques = [...new Set(teacherRecords.map(r => (r.mosque_name || '').trim()).filter(Boolean))];
+      
+      // Create class-book pairs (unique combinations)
+      const classBookPairs = [];
+      teacherRecords.forEach(r => {
+        const classType = (r.class_type || '').trim();
+        const book = (r.reference_book || '').trim();
+        if (classType && book) {
+          const key = `${classType}|${book}`;
+          if (!classBookPairs.find(p => p.key === key)) {
+            classBookPairs.push({ key, classType, book });
+          }
+        }
+      });
+      
+      // Compile day and frequency pairs (unique combinations)
+      const dayFrequencyMap = new Map();
+      teacherRecords.forEach(r => {
+        const day = r.day || '';
+        if (day) {
+          if (!dayFrequencyMap.has(day)) {
+            dayFrequencyMap.set(day, r.frequency_per_month || 0);
+          }
+        }
+      });
+      
+      const dayOrder = ['Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat', 'Sabtu', 'Ahad'];
+      const dayFrequencyList = Array.from(dayFrequencyMap.entries())
+        .sort((a, b) => dayOrder.indexOf(a[0]) - dayOrder.indexOf(b[0]));
+      
+      document.getElementById('modal-teacher-name').textContent = teacherName || '-';
+      
+      const mosquesList = document.getElementById('modal-mosques-list');
+      mosquesList.innerHTML = mosques.length > 0 
+        ? mosques.map(mosque => `<p class="text-[12px] text-[#475569] px-3 py-2 bg-[#f1f5f9] rounded-lg">${mosque}</p>`).join('')
+        : '<p class="text-[12px] text-[#94a3b8]">-</p>';
+      
+      // Render class-book pairs as a list
+      const classBookList = document.getElementById('modal-class-book-list');
+      classBookList.innerHTML = classBookPairs.length > 0 
+        ? classBookPairs.map(pair => `<p class="text-[12px] text-[#475569] px-3 py-2 bg-[#f1f5f9] rounded-lg"><span class="font-medium">${pair.classType}</span> — ${pair.book}</p>`).join('')
+        : '<p class="text-[12px] text-[#94a3b8]">-</p>';
+      
+      document.getElementById('modal-category').textContent = categories.length > 0 ? categories.join(', ') : '-';
+      document.getElementById('modal-teacher-category').textContent = record.teacher_category || '-';
+      document.getElementById('modal-tarikh-lantikan').textContent = record.tarikh_lantikan || '-';
+      document.getElementById('modal-tarikh-penempatan').textContent = record.tarikh_penempatan || '-';
+      document.getElementById('modal-guru-takmir').textContent = record.guru_takmir || '-';
+      
+      const dayFreqList = document.getElementById('modal-day-frequency-list');
+      if (dayFrequencyList.length > 0) {
+        dayFreqList.innerHTML = dayFrequencyList
+          .map(([day, freq]) => {
+            const dayClr = dayClasses(day);
+            return `<div class="flex items-center gap-3"><span class="inline-flex items-center rounded-full px-3 py-1.5 text-xs font-semibold ${dayClr}">${day}</span><span class="text-[12px] text-[#475569]">${freq} sesi/bulan</span></div>`;
+          })
+          .join('');
+      } else {
+        dayFreqList.innerHTML = '<p class="text-[12px] text-[#94a3b8]">-</p>';
+      }
+
+      const modal = document.getElementById('detail-modal');
+      modal.classList.remove('hidden', 'opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100');
+      setTimeout(() => {
+        const contentDiv = modal.querySelector('[class*="scale-95"]');
+        contentDiv.classList.remove('scale-95');
+        contentDiv.classList.add('scale-100');
+      }, 10);
+    }
+
+    async function handleDeleteClick(id, button) {
+      const record = state.records.find(r => r.__backendId === id);
+      if (!record) return;
+
+      if (button.dataset.confirming !== 'true') {
+        button.dataset.confirming = 'true';
+        button.innerHTML = '<i data-lucide="trash-2" class="w-3.5 h-3.5"></i><span>Pastikan?</span>';
+        button.classList.add('bg-[#f4e6e5]', 'text-[#9d6060]');
+        lucide.createIcons();
+
+        setTimeout(() => {
+          if (button && button.dataset.confirming === 'true') {
+            button.dataset.confirming = 'false';
+            button.innerHTML = '<i data-lucide="trash-2" class="w-3.5 h-3.5"></i><span>Padam</span>';
+            button.classList.remove('bg-[#f4e6e5]', 'text-[#9d6060]');
+            lucide.createIcons();
+          }
+        }, 3000);
+        return;
+      }
+
+      button.disabled = true;
+      button.innerHTML = '<span>Memadamkan...</span>';
+
+      const result = await window.dataSdk.delete(record);
+
+      if (result.isOk) {
+        showToast('Jadual dibuang');
+      } else {
+        button.disabled = false;
+        button.dataset.confirming = 'false';
+        button.innerHTML = '<i data-lucide="trash-2" class="w-3.5 h-3.5"></i><span>Padam</span>';
+        button.classList.remove('bg-[#f4e6e5]', 'text-[#9d6060]');
+        showToast('Tidak dapat memadamkan rekod');
+        lucide.createIcons();
+      }
+    }
+
+    // Auto-fill fields when teacher name matches (debounced on input)
+    let autofillTimeout;
+    document.getElementById('teacher_name').addEventListener('input', () => {
+      clearTimeout(autofillTimeout);
+      autofillTimeout = setTimeout(() => {
+        const teacherName = document.getElementById('teacher_name').value.trim();
+        if (teacherName && state.records.length > 0) {
+          // Find first matching record by teacher name (exact or partial match)
+          const matchingRecord = state.records.find(r => 
+            (r.teacher_name || '').trim().toLowerCase().includes(teacherName.toLowerCase())
+          );
+          if (matchingRecord) {
+            document.getElementById('tarikh_lantikan').value = matchingRecord.tarikh_lantikan || '';
+            document.getElementById('tarikh_penempatan').value = matchingRecord.tarikh_penempatan || '';
+            document.getElementById('teacher_category').value = matchingRecord.teacher_category || '';
+            document.getElementById('category').value = matchingRecord.category || '';
+          } else {
+            // Clear fields if no match found
+            document.getElementById('tarikh_lantikan').value = '';
+            document.getElementById('tarikh_penempatan').value = '';
+            document.getElementById('teacher_category').value = '';
+            document.getElementById('category').value = '';
+          }
+        }
+      }, 300);
+    });
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      formMessage.textContent = '';
+      formMessage.className = 'text-sm min-h-[20px]';
+
+      const teacher = document.getElementById('teacher_name').value.trim();
+      let mosque = document.getElementById('mosque_name').value.trim();
+      const classType = document.getElementById('class_type').value;
+      const referenceBook = document.getElementById('reference_book').value.trim();
+      const category = document.getElementById('category').value;
+      const teacherCategory = document.getElementById('teacher_category').value;
+      const day = document.getElementById('day').value;
+      const frequency = Number(document.getElementById('frequency_per_month').value);
+      const tarikhLantikan = document.getElementById('tarikh_lantikan').value;
+      const tarikhPenempatan = document.getElementById('tarikh_penempatan').value;
+      const guruTakmir = document.getElementById('guru_takmir').value;
+
+      // If "Lain-lain" is selected, use the custom mosque name
+      if (mosque === 'Lain-lain') {
+        mosque = document.getElementById('other_mosque_name').value.trim();
+      }
+
+      if (!teacher || !mosque || !classType || !referenceBook || !category || !teacherCategory || !day || !frequency || frequency < 1 || !guruTakmir) {
+        formMessage.textContent = 'Sila lengkapkan semua medan dengan kekerapan yang sah.';
+        formMessage.classList.add('text-[#9d6060]');
+        return;
+      }
+
+      const editId = form.dataset.editId;
+      const isEditing = !!editId;
+
+      if (!isEditing && state.records.length >= 999) {
+        formMessage.textContent = 'Had rekod tercapai. Sila padam rekod yang lebih lama dahulu.';
+        formMessage.classList.add('text-[#9d6060]');
+        return;
+      }
+
+      setSubmitting(true);
+
+      const data = {
+        teacher_name: teacher,
+        mosque_name: mosque,
+        class_type: classType,
+        reference_book: referenceBook,
+        category: category,
+        teacher_category: teacherCategory,
+        day: day,
+        frequency_per_month: frequency,
+        tarikh_lantikan: tarikhLantikan,
+        tarikh_penempatan: tarikhPenempatan,
+        guru_takmir: guruTakmir
+      };
+
+      let result;
+      if (isEditing) {
+        // Update existing record
+        const existingRecord = state.records.find(r => r.__backendId === editId);
+        if (existingRecord) {
+          result = await window.dataSdk.update({ ...existingRecord, ...data });
+        }
+      } else {
+        // Create new record
+        result = await window.dataSdk.create(data);
+      }
+
+      setSubmitting(false);
+
+      if (result.isOk) {
+        form.reset();
+        form.dataset.editId = '';
+        submitLabel.textContent = 'Tambah ke jadual';
+        document.getElementById('day').value = 'Isnin';
+        document.getElementById('category').value = '';
+        document.getElementById('teacher_category').value = '';
+        document.getElementById('tarikh_lantikan').value = '';
+        document.getElementById('tarikh_penempatan').value = '';
+        document.getElementById('guru_takmir').value = '';
+        
+        if (isEditing) {
+          formMessage.textContent = 'Jadual guru berjaya dikemaskini.';
+          showToast('Jadual dikemaskini');
+        } else {
+          formMessage.textContent = 'Jadual guru berjaya ditambahkan.';
+          showToast('Jadual ditambahkan');
+        }
+        formMessage.classList.add('text-[#55705d]');
+      } else {
+        formMessage.textContent = isEditing ? 'Tidak dapat mengemas kini jadual. Sila cuba lagi.' : 'Tidak dapat menambah jadual. Sila cuba lagi.';
+        formMessage.classList.add('text-[#9d6060]');
+      }
+    });
+
+    function performSearch() {
+      state.filter = searchInput.value;
+      state.currentPage = 1;
+      state.monthlyCurrentPage = 1;
+      
+      // Update active tab content
+      const activeTab = document.querySelector('.tab-content:not(.hidden)');
+      if (activeTab === document.getElementById('tab-content-records')) {
+        renderRows();
+        updatePagination();
+      } else if (activeTab === document.getElementById('tab-content-monthly')) {
+        renderMonthlySchedule();
+        updateMonthlyPagination();
+      }
+    }
+
+    function setCategoryFilter(category) {
+      state.categoryFilter = category;
+      state.currentPage = 1;
+      state.monthlyCurrentPage = 1;
+
+      // Update active filter button
+      document.querySelectorAll('.category-filter').forEach(btn => {
+        btn.classList.remove('active', 'bg-[#55705d]', 'text-white');
+        btn.classList.add('bg-white', 'border', 'border-[#e2e8f0]', 'text-[#475569]');
+      });
+      document.querySelector(`[data-category="${category}"]`).classList.add('active', 'bg-[#55705d]', 'text-white');
+      document.querySelector(`[data-category="${category}"]`).classList.remove('bg-white', 'border', 'border-[#e2e8f0]', 'text-[#475569]');
+
+      // Update active tab content
+      const activeTab = document.querySelector('.tab-content:not(.hidden)');
+      if (activeTab === document.getElementById('tab-content-records')) {
+        renderRows();
+        updatePagination();
+      } else if (activeTab === document.getElementById('tab-content-monthly')) {
+        renderMonthlySchedule();
+        updateMonthlyPagination();
+      }
+    }
+
+    function setTakmirFilter(takmir) {
+      state.takmirFilter = takmir;
+      state.currentPage = 1;
+      state.monthlyCurrentPage = 1;
+
+      // Update active filter button
+      document.querySelectorAll('.takmir-filter').forEach(btn => {
+        btn.classList.remove('active', 'bg-[#fef3c7]', 'text-[#92400e]');
+        btn.classList.add('bg-white', 'border', 'border-[#e2e8f0]', 'text-[#475569]');
+      });
+      document.querySelector(`[data-takmir="${takmir}"]`).classList.add('active', 'bg-[#fef3c7]', 'text-[#92400e]');
+      document.querySelector(`[data-takmir="${takmir}"]`).classList.remove('bg-white', 'border', 'border-[#e2e8f0]', 'text-[#475569]');
+
+      // Update active tab content
+      const activeTab = document.querySelector('.tab-content:not(.hidden)');
+      if (activeTab === document.getElementById('tab-content-records')) {
+        renderRows();
+        updatePagination();
+      } else if (activeTab === document.getElementById('tab-content-monthly')) {
+        renderMonthlySchedule();
+        updateMonthlyPagination();
+      }
+    }
+
+    searchInput.addEventListener('input', (e) => {
+      performSearch();
+    });
+
+    searchInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        performSearch();
+      }
+    });
+
+    // Category filter buttons
+    document.getElementById('filter-all').addEventListener('click', () => setCategoryFilter('all'));
+    document.getElementById('filter-quran').addEventListener('click', () => setCategoryFilter('Guru al-Quran'));
+    document.getElementById('filter-religion').addEventListener('click', () => setCategoryFilter('Guru Agama'));
+    document.getElementById('filter-both').addEventListener('click', () => setCategoryFilter('Guru Al-Quran dan Agama'));
+
+    // Takmir filter buttons
+    document.getElementById('filter-takmir-all').addEventListener('click', () => setTakmirFilter('all'));
+    document.getElementById('filter-takmir-ya').addEventListener('click', () => setTakmirFilter('Ya'));
+    document.getElementById('filter-takmir-tidak').addEventListener('click', () => setTakmirFilter('Tidak'));
+
+
+
+    const monthNames = ['Januari', 'Februari', 'Mac', 'April', 'Mei', 'Jun', 'Julai', 'Ogos', 'September', 'Oktober', 'November', 'Disember'];
+
+    function getPaginatedMonthlyRecords() {
+      // Filter records based on search input, category filter, and takmir filter
+      const q = state.filter.trim().toLowerCase();
+      let filteredRecords = state.records;
+      if (q) {
+        filteredRecords = state.records.filter(r =>
+          (r.teacher_name || '').toLowerCase().includes(q) ||
+          (r.mosque_name || '').toLowerCase().includes(q) ||
+          (r.class_type || '').toLowerCase().includes(q) ||
+          (r.reference_book || '').toLowerCase().includes(q) ||
+          (r.day || '').toLowerCase().includes(q)
+        );
+      }
+
+      // Apply category filter
+      if (state.categoryFilter !== 'all') {
+        filteredRecords = filteredRecords.filter(r => r.teacher_category === state.categoryFilter);
+      }
+
+      // Apply takmir filter
+      if (state.takmirFilter !== 'all') {
+        filteredRecords = filteredRecords.filter(r => r.guru_takmir === state.takmirFilter);
+      }
+
+      const start = (state.monthlyCurrentPage - 1) * state.monthlyRecordsPerPage;
+      const end = start + state.monthlyRecordsPerPage;
+      return {
+        records: filteredRecords.slice(start, end),
+        total: filteredRecords.length,
+        totalPages: Math.ceil(filteredRecords.length / state.monthlyRecordsPerPage)
+      };
+    }
+
+    function updateMonthlyPagination() {
+      const { total, totalPages } = getPaginatedMonthlyRecords();
+      const start = total === 0 ? 0 : (state.monthlyCurrentPage - 1) * state.monthlyRecordsPerPage + 1;
+      const end = Math.min(state.monthlyCurrentPage * state.monthlyRecordsPerPage, total);
+      
+      document.getElementById('monthly-pagination-info').textContent = `${start}–${end} daripada ${total}`;
+      
+      const prevBtn = document.getElementById('monthly-prev-page');
+      const nextBtn = document.getElementById('monthly-next-page');
+      prevBtn.disabled = state.monthlyCurrentPage === 1;
+      nextBtn.disabled = state.monthlyCurrentPage >= totalPages;
+
+      const pageNumbers = document.getElementById('monthly-page-numbers');
+      pageNumbers.innerHTML = '';
+      
+      const maxPagesToShow = 15;
+      let startPage = Math.max(1, state.monthlyCurrentPage - Math.floor(maxPagesToShow / 2));
+      let endPage = Math.min(totalPages, startPage + maxPagesToShow - 1);
+      if (endPage - startPage + 1 < maxPagesToShow) {
+        startPage = Math.max(1, endPage - maxPagesToShow + 1);
+      }
+
+      for (let i = startPage; i <= endPage; i++) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = `inline-flex items-center justify-center rounded-lg px-3 py-2 text-xs font-semibold transition ${
+          i === state.monthlyCurrentPage
+            ? 'bg-[#55705d] text-white'
+            : 'bg-white border border-[#e2e8f0] text-[#475569] hover:bg-[#f1f5f9]'
+        }`;
+        btn.textContent = i;
+        btn.addEventListener('click', () => {
+          state.monthlyCurrentPage = i;
+          renderMonthlySchedule();
+          updateMonthlyPagination();
+        });
+        pageNumbers.appendChild(btn);
+      }
+    }
+
+    function createMonthlyRow(record) {
+      const fragment = document.getElementById('monthly-record-template').content.cloneNode(true);
+      const row = fragment.querySelector('tr');
+      row.dataset.id = record.__backendId;
+
+      const teacherCell = document.createElement('td');
+      teacherCell.className = 'canva-text px-3 py-3 font-medium text-[#0f172a] w-1/5';
+      teacherCell.textContent = record.teacher_name || '';
+      row.insertBefore(teacherCell, row.firstChild);
+
+      row.querySelector('[data-template-id="monthly-record-mosque"]').textContent = record.mosque_name || '';
+      row.querySelector('[data-template-id="monthly-record-class"]').textContent = record.class_type || '';
+      row.querySelector('[data-template-id="monthly-record-sessions"]').textContent = (record.frequency_per_month || 0) + ' sesi/bulan';
+
+      const dayPill = row.querySelector('[data-template-id="monthly-record-day-pill"]');
+      dayPill.textContent = record.day || '';
+      dayPill.className = 'canva-tag inline-flex items-center rounded-full px-2 py-1 text-xs font-semibold ' + dayClasses(record.day);
+
+      const viewBtn = row.querySelector('[data-template-id="monthly-view-button"]');
+      viewBtn.addEventListener('click', () => handleViewClick(record));
+
+      return row;
+    }
+
+    function updateMonthlyRow(row, record) {
+      row.cells[1].textContent = record.mosque_name || '';
+      row.cells[2].textContent = record.class_type || '';
+      row.querySelector('[data-template-id="monthly-record-sessions"]').textContent = (record.frequency_per_month || 0) + ' sesi/bulan';
+
+      const dayPill = row.querySelector('[data-template-id="monthly-record-day-pill"]');
+      dayPill.textContent = record.day || '';
+      dayPill.className = 'canva-tag inline-flex items-center rounded-full px-2 py-1 text-xs font-semibold ' + dayClasses(record.day);
+    }
+
+    function renderMonthlySchedule() {
+      const monthlyBody = document.getElementById('monthly-schedule-body');
+      const emptyMonthly = document.getElementById('empty-state-monthly');
+      const { records: visible, total } = getPaginatedMonthlyRecords();
+      const existing = new Map([...monthlyBody.children].map(row => [row.dataset.id, row]));
+
+      visible.forEach(record => {
+        if (existing.has(record.__backendId)) {
+          updateMonthlyRow(existing.get(record.__backendId), record);
+          existing.delete(record.__backendId);
+        } else {
+          monthlyBody.appendChild(createMonthlyRow(record));
+        }
+      });
+
+      existing.forEach(row => row.remove());
+      emptyMonthly.classList.toggle('hidden', total > 0);
+      document.getElementById('monthly-pagination-controls').classList.toggle('hidden', total === 0);
+      lucide.createIcons();
+    }
+
+    function switchTab(tabName) {
+      document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.remove('active', 'border-[#55705d]', 'text-[#55705d]');
+        btn.classList.add('border-transparent', 'text-[#94a3b8]', 'hover:text-[#64748b]');
+      });
+      document.getElementById(`tab-${tabName}`).classList.add('active', 'border-[#55705d]', 'text-[#55705d]');
+
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.add('hidden');
+      });
+      document.getElementById(`tab-content-${tabName}`).classList.remove('hidden');
+
+      if (tabName === 'monthly') {
+        renderMonthlySchedule();
+        updateMonthlyPagination();
+      }
+    }
+
+    document.getElementById('prev-page').addEventListener('click', () => {
+      if (state.currentPage > 1) {
+        state.currentPage--;
+        renderRows();
+        updatePagination();
+      }
+    });
+
+    document.getElementById('next-page').addEventListener('click', () => {
+      const { totalPages } = getPaginatedRecords();
+      if (state.currentPage < totalPages) {
+        state.currentPage++;
+        renderRows();
+        updatePagination();
+      }
+    });
+
+    document.getElementById('tab-records').addEventListener('click', () => switchTab('records'));
+    document.getElementById('tab-monthly').addEventListener('click', () => switchTab('monthly'));
+
+
+
+    document.getElementById('monthly-prev-page').addEventListener('click', () => {
+      if (state.monthlyCurrentPage > 1) {
+        state.monthlyCurrentPage--;
+        renderMonthlySchedule();
+        updateMonthlyPagination();
+      }
+    });
+
+    document.getElementById('monthly-next-page').addEventListener('click', () => {
+      const { totalPages } = getPaginatedMonthlyRecords();
+      if (state.monthlyCurrentPage < totalPages) {
+        state.monthlyCurrentPage++;
+        renderMonthlySchedule();
+        updateMonthlyPagination();
+      }
+    });
+
+    // Toggle "Lain-lain" custom mosque input
+    document.getElementById('mosque_name').addEventListener('change', () => {
+      const mosqueSelect = document.getElementById('mosque_name');
+      const otherMosqueContainer = document.getElementById('other-mosque-container');
+      const otherMosqueInput = document.getElementById('other_mosque_name');
+      
+      if (mosqueSelect.value === 'Lain-lain') {
+        otherMosqueContainer.classList.remove('hidden');
+        otherMosqueInput.focus();
+      } else {
+        otherMosqueContainer.classList.add('hidden');
+        otherMosqueInput.value = '';
+      }
+    });
+
+    document.getElementById('mosque-prev-page').addEventListener('click', () => {
+      if (mosqueState.currentPage > 1) {
+        mosqueState.currentPage--;
+        renderMosqueList();
+        updateMosquePagination();
+      }
+    });
+
+    document.getElementById('mosque-next-page').addEventListener('click', () => {
+      const { totalPages } = getPaginatedMosques();
+      if (mosqueState.currentPage < totalPages) {
+        mosqueState.currentPage++;
+        renderMosqueList();
+        updateMosquePagination();
+      }
+    });
+
+    function closeModal() {
+      const modal = document.getElementById('detail-modal');
+      const contentDiv = modal.querySelector('[class*="scale-100"]');
+      contentDiv.classList.add('scale-95');
+      contentDiv.classList.remove('scale-100');
+      setTimeout(() => {
+        modal.classList.add('hidden', 'opacity-0', 'pointer-events-none');
+        modal.classList.remove('opacity-100');
+      }, 200);
+    }
+
+    document.getElementById('close-modal').addEventListener('click', closeModal);
+    document.getElementById('modal-close-btn').addEventListener('click', closeModal);
+    document.getElementById('modal-print-btn').addEventListener('click', () => {
+      const teacherName = document.getElementById('modal-teacher-name').textContent;
+      const category = document.getElementById('modal-category').textContent;
+      const teacherCategory = document.getElementById('modal-teacher-category').textContent;
+      const guruTakmir = document.getElementById('modal-guru-takmir').textContent;
+      const tarikhLantikan = document.getElementById('modal-tarikh-lantikan').textContent;
+      const tarikhPenempatan = document.getElementById('modal-tarikh-penempatan').textContent;
+
+      const mosques = Array.from(document.querySelectorAll('#modal-mosques-list p')).map(p => p.textContent).filter(t => t !== '-').join('<br>');
+      const classBooks = Array.from(document.querySelectorAll('#modal-class-book-list p')).map(p => p.textContent).filter(t => t !== '-').join('<br>');
+      const dayFreq = Array.from(document.querySelectorAll('#modal-day-frequency-list div')).map(div => {
+        const dayPill = div.querySelector('[class*="rounded-full"]')?.textContent || '';
+        const freqText = div.querySelector('.text-\\[12px\\]')?.textContent || '';
+        return dayPill + ' ' + freqText;
+      }).join('<br>');
+
+      const printContent = ``;
+       
+
+        <body>
+          <h1>Maklumat Penuh Guru</h1>
+          <div class="section">
+            <div class="label">Nama Guru</div>
+            <div class="value">${teacherName}</div>
+            <div class="divider"></div>
+          </div>
+          <div class="section">
+            <div class="label">Masjid</div>
+            <div class="value">${mosques || '-'}</div>
+            <div class="divider"></div>
+          </div>
+          <div class="section">
+            <div class="label">Jenis Kelas dan Kitab Rujukan</div>
+            <div class="value">${classBooks || '-'}</div>
+            <div class="divider"></div>
+          </div>
+          <div class="section" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div>
+              <div class="label">Kepakaran</div>
+              <div class="value">${category}</div>
+            </div>
+            <div>
+              <div class="label">Kategori Guru</div>
+              <div class="value">${teacherCategory}</div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="section" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div>
+              <div class="label">Guru Takmir</div>
+              <div class="value">${guruTakmir}</div>
+            </div>
+            <div>
+              <div class="label">Tarikh Lantikan</div>
+              <div class="value">${tarikhLantikan}</div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="section">
+            <div class="label">Tarikh Penempatan</div>
+            <div class="value">${tarikhPenempatan}</div>
+            <div class="divider"></div>
+          </div>
+          <div class="section">
+            <div class="label">Hari dan Kekerapan Pengajaran</div>
+            <div class="value">${dayFreq || '-'}</div>
+          </div>
+        </body>
+
+      const printWindow = window.open('', '_blank');
+      if (printWindow) {
+        printWindow.document.write(printContent);
+        printWindow.document.close();
+        setTimeout(() => printWindow.print(), 100);
+      } else {
+        showToast('Tidak dapat membuka tetingkap cetak. Sila semak tetapan penyemak imbas.');
+      }
+    });
+    document.getElementById('detail-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'detail-modal') {
+        closeModal();
+      }
+    });
+
+    const handler = {
+      onDataChanged(data) {
+        state.records = [...data].sort((a, b) => {
+          const teacherA = (a.teacher_name || '').toLowerCase();
+          const teacherB = (b.teacher_name || '').toLowerCase();
+          return teacherA.localeCompare(teacherB);
+        });
+        state.currentPage = 1;
+        state.monthlyCurrentPage = 1;
+        mosqueState.currentPage = 1;
+        updateSummary();
+        renderRows();
+        updatePagination();
+        renderTeacherLists();
+        renderMosqueList();
+        updateMosquePagination();
+        // Update monthly view if it's the active tab
+        if (!document.getElementById('tab-content-monthly').classList.contains('hidden')) {
+          renderMonthlySchedule();
+          updateMonthlyPagination();
+        }
+      }
+    };
+
+    function renderTeacherLists() {
+      // Quran teachers - show all with scrolling
+      const quranTeachers = [...new Set(
+        state.records
+          .filter(r => r.teacher_category === 'Guru al-Quran')
+          .map(r => (r.teacher_name || '').trim())
+          .filter(Boolean)
+      )].sort();
+
+      const quranList = document.getElementById('quran-teachers-list');
+      quranList.innerHTML = quranTeachers.length === 0 
+        ? '<p class="text-sm text-[#94a3b8]">Tiada data</p>'
+        : quranTeachers.map((name, index) => 
+            `<div class="teacher-name-pill px-3 py-2 rounded-lg bg-[#f0f9ff] border border-[#bae6fd] text-[#0284c7] text-sm font-medium flex items-center gap-2 cursor-pointer hover:bg-[#e0f2fe] transition" data-teacher="${name}"><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#0284c7] text-white text-xs font-bold">${index + 1}</span>${name}</div>`
+          ).join('');
+
+      // Add click handlers for Quran teacher names
+      quranList.querySelectorAll('.teacher-name-pill').forEach(pill => {
+        pill.addEventListener('click', () => {
+          const teacherName = pill.dataset.teacher;
+          const record = state.records.find(r => r.teacher_name === teacherName);
+          if (record) {
+            handleViewClick(record);
+          }
+        });
+      });
+
+      // Religion teachers - show all with scrolling
+      const religionTeachers = [...new Set(
+        state.records
+          .filter(r => r.teacher_category === 'Guru Agama')
+          .map(r => (r.teacher_name || '').trim())
+          .filter(Boolean)
+      )].sort();
+
+      const religionList = document.getElementById('religion-teachers-list');
+      religionList.innerHTML = religionTeachers.length === 0 
+        ? '<p class="text-sm text-[#94a3b8]">Tiada data</p>'
+        : religionTeachers.map((name, index) => 
+            `<div class="teacher-name-pill px-3 py-2 rounded-lg bg-[#fef3c7] border border-[#fcd34d] text-[#92400e] text-sm font-medium flex items-center gap-2 cursor-pointer hover:bg-[#fde68a] transition" data-teacher="${name}"><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#92400e] text-white text-xs font-bold">${index + 1}</span>${name}</div>`
+          ).join('');
+
+      // Add click handlers for Religion teacher names
+      religionList.querySelectorAll('.teacher-name-pill').forEach(pill => {
+        pill.addEventListener('click', () => {
+          const teacherName = pill.dataset.teacher;
+          const record = state.records.find(r => r.teacher_name === teacherName);
+          if (record) {
+            handleViewClick(record);
+          }
+        });
+      });
+
+      // Render mosque list
+      renderMosqueList();
+    }
+
+    // Mosque list pagination state
+    const mosqueState = {
+      currentPage: 1,
+      recordsPerPage: 5
+    };
+
+    function getPaginatedMosques() {
+      const mosques = [...new Set(
+        state.records
+          .map(r => (r.mosque_name || '').trim())
+          .filter(Boolean)
+      )].sort();
+
+      const start = (mosqueState.currentPage - 1) * mosqueState.recordsPerPage;
+      const end = start + mosqueState.recordsPerPage;
+      return {
+        mosques: mosques.slice(start, end),
+        total: mosques.length,
+        totalPages: Math.ceil(mosques.length / mosqueState.recordsPerPage)
+      };
+    }
+
+    function updateMosquePagination() {
+      const { total, totalPages } = getPaginatedMosques();
+      const start = total === 0 ? 0 : (mosqueState.currentPage - 1) * mosqueState.recordsPerPage + 1;
+      const end = Math.min(mosqueState.currentPage * mosqueState.recordsPerPage, total);
+      
+      document.getElementById('mosque-pagination-info').textContent = `${start}–${end} daripada ${total}`;
+      
+      const prevBtn = document.getElementById('mosque-prev-page');
+      const nextBtn = document.getElementById('mosque-next-page');
+      prevBtn.disabled = mosqueState.currentPage === 1;
+      nextBtn.disabled = mosqueState.currentPage >= totalPages;
+
+      const pageNumbers = document.getElementById('mosque-page-numbers');
+      pageNumbers.innerHTML = '';
+      
+      const maxPagesToShow = 15;
+      let startPage = Math.max(1, mosqueState.currentPage - Math.floor(maxPagesToShow / 2));
+      let endPage = Math.min(totalPages, startPage + maxPagesToShow - 1);
+      if (endPage - startPage + 1 < maxPagesToShow) {
+        startPage = Math.max(1, endPage - maxPagesToShow + 1);
+      }
+
+      for (let i = startPage; i <= endPage; i++) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = `inline-flex items-center justify-center rounded-lg px-3 py-2 text-xs font-semibold transition ${
+          i === mosqueState.currentPage
+            ? 'bg-[#55705d] text-white'
+            : 'bg-white border border-[#e2e8f0] text-[#475569] hover:bg-[#f1f5f9]'
+        }`;
+        btn.textContent = i;
+        btn.addEventListener('click', () => {
+          mosqueState.currentPage = i;
+          renderMosqueList();
+          updateMosquePagination();
+        });
+        pageNumbers.appendChild(btn);
+      }
+    }
+
+    function renderMosqueList() {
+      const { mosques, total } = getPaginatedMosques();
+      const container = document.getElementById('mosque-list-container');
+      const emptyState = document.getElementById('mosque-empty-state');
+      const paginationControls = document.getElementById('mosque-pagination-controls');
+
+      if (total === 0) {
+        container.querySelector('.space-y-3').innerHTML = '';
+        container.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        paginationControls.classList.add('hidden');
+      } else {
+        const mosqueRowsHTML = mosques.map((mosque) => {
+          // Get all unique teacher-category pairs for this mosque
+          const teacherCategoryPairs = [];
+          const recordsForMosque = state.records.filter(r => r.mosque_name === mosque);
+          
+          recordsForMosque.forEach(r => {
+            const teacherName = (r.teacher_name || '').trim();
+            const teacherCat = (r.teacher_category || '').trim();
+            if (teacherName && teacherCat) {
+              const key = `${teacherName}|${teacherCat}`;
+              if (!teacherCategoryPairs.find(p => p.key === key)) {
+                teacherCategoryPairs.push({ key, teacherName, teacherCat });
+              }
+            }
+          });
+          
+          teacherCategoryPairs.sort((a, b) => a.teacherName.localeCompare(b.teacherName));
+
+          return 
+          
+          <div class="mosque-row px-4 py-3 rounded-lg bg-[#f8fafc] border border-[#e2e8f0] text-sm text-[#475569] font-medium cursor-pointer hover:bg-[#f1f5f9] transition" data-mosque="${mosque}">
+            <div class="mosque-name-section flex items-center justify-between">
+              <span class="mosque-name">${mosque}</span>
+              <svg class="mosque-chevron w-4 h-4 text-[#94a3b8] transition transform" data-lucide="chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="mosque-teachers-section hidden mt-3 pt-3 border-t border-[#e2e8f0]">
+              <div class="overflow-x-auto">
+                <table class="w-full text-[12px]">
+                  <thead>
+                    <tr class="text-left text-[11px] uppercase tracking-[0.12em] text-[#64748b] font-semibold border-b border-[#e2e8f0]">
+                      <th class="px-3 py-2">Nama Masjid</th>
+                      <th class="px-3 py-2">Nama Guru</th>
+                      <th class="px-3 py-2">Kategori Guru</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-[#f1f5f9]">
+                    ${teacherCategoryPairs.map(pair => 
+                      `<tr class="text-[#475569]">
+                         <td class="px-3 py-2 font-medium">${mosque}</td>
+                         <td class="px-3 py-2">${pair.teacherName}</td>
+                         <td class="px-3 py-2">${pair.teacherCat}</td>
+                       </tr>`
+                    ).join('')}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          
+        }).join('');
+        
+        container.querySelector('.space-y-3').innerHTML = mosqueRowsHTML;
+        container.classList.remove('hidden');
+        emptyState.classList.add('hidden');
+        paginationControls.classList.toggle('hidden', total <= mosqueState.recordsPerPage);
+
+        // Attach click handlers to mosque rows
+        container.querySelectorAll('.mosque-row').forEach(row => {
+          row.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const teachersSection = row.querySelector('.mosque-teachers-section');
+            const chevron = row.querySelector('.mosque-chevron');
+            
+            if (!teachersSection || !chevron) return;
+
+            // Close all other open rows
+            container.querySelectorAll('.mosque-row').forEach(otherRow => {
+              if (otherRow !== row) {
+                const otherTeachersSection = otherRow.querySelector('.mosque-teachers-section');
+                const otherChevron = otherRow.querySelector('.mosque-chevron');
+                if (otherTeachersSection) otherTeachersSection.classList.add('hidden');
+                if (otherChevron) otherChevron.classList.remove('rotate-180');
+              }
+            });
+
+            // Toggle current row
+            teachersSection.classList.toggle('hidden');
+            chevron.classList.toggle('rotate-180');
+          });
+        });
+
+        lucide.createIcons();
+      }
+    }
+
+    async function init() {
+      const today = new Date();
+      document.getElementById('today-label').textContent = today.toLocaleDateString('ms-MY', {
+        day:'2-digit',
+        month:'short',
+        year:'numeric'
+      });
+
+      const result = await window.dataSdk.init(handler);
+      if (!result.isOk) {
+        formMessage.textContent = 'Tidak dapat bersambung ke jadual. Sila muat semula.';
+        formMessage.classList.add('text-[#9d6060]');
+      }
+
+      lucide.createIcons();
+    }
+
+    init();
+  </script>
+  <script>
+    const backToTopBtn = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.add('opacity-100');
+      } else {
+        backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.remove('opacity-100');
+      }
+    });
+    
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+ 
+</body></html>
